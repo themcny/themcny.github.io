@@ -10,23 +10,27 @@
 				top: 0;
 				left: 0;
 				width: 250px;
-				background:#26497F;
+				background:#ffffff;
+				border-right: 1px solid #000000;
 			}
 			div.header {
-				position: absolute;
-				top: 0;
+				position: fixed;
+				top: 10px;
 				left: 255px;
-				height: 300px;
+				height: 200px;
 				width: 100%;
 				background:#d3d3d3;
+			}
+			div.main-content {
+				position: absolute;
+				top: 255px;
+				left: 260px;
 			}
 		</style>
 	</head>
 	<body>
-		
-		<p>Where information goes</p>
-		<div class="sidebar">Testing the sidebar</div> 
-		<!-- I made the header placement relative to the sidebar (since the sidebar is fixed) so the sidebar is the parent of the header and therefore must come first. TThe sidebar is located in the top left corner and spans the entirety of the left side of the viewport which makes it the perfect parent.-->
 		<div class="header"><h1>Site Title</h1></div>
+		<div class="sidebar">Testing the sidebar</div> 
+		<div class="main-content"><p>Where information goes</p></div>
 	</body>
 </html>

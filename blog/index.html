@@ -4,16 +4,74 @@
 		<meta charset= "utf-8">
 		<title>Nicole's Blog</title>
 		<style>
+		body{
+			font-family: Arial, sans-serif;
+			font-size:5vh;
+			background-color: #f2f2f2;
+		}
+		header{
+			position:fixed;
+			left: 3vw; width: 85vw;
+			font-size: 7vh;
+			border:1px black;
+			margin:15px;padding:5px;
+			background-color:#f2f2f2;
+			color:#100226;
+		}
+		details{
+			position:relative;
+			top:10vh;left: 5vw;
+			border:1px black;
+			margin:15px;padding:5px;padding-top:30px;
+		}
+		footer{
+			position:fixed;
+			bottom:1vh; left:3vw; width: 85vw;
+			border:1px black;
+			margin:15px;padding:5px;
+			background-color:#f2f2f2;
+			color:#000000;
+		}
 
 		</style>
 	</head>
 	<body>
-		<ul>
-			<li>September</li>
+		<header>
+			Blog Archive Navigation
+		</header>
+		<br>
+		<details>
+			<summary>September</summary>
 			<ul>
-				<li><a href="link.to.blog.one">Blog Post #1</a></li>
-				<li><a href="link.to.blog.two">Blog Post #2</a></li>
+				<li><a href="t1-git-blog.html">Blog Post #1</a></li>
+				<li><a href="#">Blog Post #2</a></li>
+				<!--for the future<li><a href="#">Blog Post #3</a></li>-->
 			</ul>
-			<li>October</li>
+		</details>
+		<details>
+			<summary>October</summary>
+			<!--For the future<ul>
+				<li><a href="#">Future Blog Post</a></li>
+			</ul>-->
+		</details>
+		<details>
+			<summary>November</summary>
+			<!--For the future<ul>
+				<li><a href="#">Future Blog Post</a></li>
+			</ul>-->
+		</details>
+		<details>
+			<summary>December</summary>
+			<!--For the future<ul>
+				<li><a href="#">Future Blog Post</a></li>
+			</ul>-->
+		</details>
+		<footer>
+			<nav>
+				<a href="../index.html">Home Page</a> |
+				<a href="../index.html">About Me</a> |
+				<a href="t1-git-blog.html">Most Recent Post</a>
+			</nav>
+		</footer>
 	</body>
 </html>

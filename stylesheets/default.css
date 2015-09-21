@@ -20,7 +20,7 @@ div#sidebar {
 }
 div#content {
 	position:fixed;
-	left:255px;top:255px;width:70vw;height:65vh;
+	left:255px;top:275px;width:70vw;height:65vh;
 	border:1px black;
 	margin:15px;padding:5px;
 	color:#181818;
@@ -28,11 +28,11 @@ div#content {
 	background:white;
 }
 div#links {
-	background:#CCFFFF;
-	padding:10px;color:white;
+	background:#B0B0B0;
+	padding:10px;
+	color:white;
 	border-radius:4px; text-decoration: none;
 	font-size: 18px; display:inline-block;
-	margin:20px;
 }
 	
 header,footer{

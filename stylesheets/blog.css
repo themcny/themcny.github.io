@@ -1,22 +1,23 @@
-body{
-	font-family: Arial, sans-serif;
-	font-size:5vh;
-	background-color: #f2f2f2;
+body {
+	font-family:Arial,Sans-serif;
+	font-size:1.5vh;
 }
 header{
 	position:fixed;
 	left: 3vw; width: 85vw;
-	font-size: 7vh;
+	font-size: 3vh;
 	border:1px black;
 	margin:15px;padding:5px;
-	background-color:#f2f2f2;
-	color:#100226;
 }
-details{
-	position:relative;
-	top:10vh;left: 5vw;
+div#section{
+	position:fixed;
+	left:3vw;top:255px;width:70vw;height:65vh;
 	border:1px black;
-	margin:15px;padding:5px;padding-top:30px;
+	margin:15px;padding:5px;
+	text-align: justify;
+}
+div#date{
+	float:right;
 }
 footer{
 	position:fixed;
@@ -25,3 +26,4 @@ footer{
 	margin:15px;padding:5px;
 	background-color:#f2f2f2;
 	color:#000000;
+}

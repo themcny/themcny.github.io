@@ -23,9 +23,16 @@ div#content {
 	left:255px;top:255px;width:70vw;height:65vh;
 	border:1px black;
 	margin:15px;padding:5px;
-	color:#9CCDFF;
+	color:#181818;
 	text-align: justify;
-	background-color:#100226;
+	background:white;
+}
+div#links {
+	background:#CCFFFF;
+	padding:10px;color:white;
+	border-radius:4px; text-decoration: none;
+	font-size: 18px; display:inline-block;
+	margin:20px;
 }
 	
 header,footer{
@@ -40,8 +47,10 @@ header{
 	height: 20vh;
 	font-size: 12vh;
 	position:fixed; top:10px;
+	background:linear-gradient(#202020,#C0C0C0);
 }
 footer{
 	position:fixed;
 	bottom:0;height:3vh;
+	background:linear-gradient(#F2f2f2,#000000);
 }

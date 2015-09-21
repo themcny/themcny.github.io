@@ -1,0 +1,29 @@
+body {
+	font-family:Arial,Sans-serif;
+	font-size:1.5vh;
+}
+header{
+	position:fixed;
+	left: 3vw; width: 85vw;
+	font-size: 3vh;
+	border:1px black;
+	margin:15px;padding:5px;
+}
+div#section{
+	position:fixed;
+	left:3vw;top:255px;width:70vw;height:65vh;
+	border:1px black;
+	margin:15px;padding:5px;
+	text-align: justify;
+}
+div#date{
+	float:right;
+}
+footer{
+	position:fixed;
+	bottom:1vh; left:3vw; width: 85vw;
+	border:1px black;
+	margin:15px;padding:5px;
+	background-color:#f2f2f2;
+	color:#000000;
+}

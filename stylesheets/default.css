@@ -2,14 +2,14 @@ body {
 	font-family:Arial,Sans-serif;
 	font-size:1.5vh;
 }
-div#nav{
+div.nav{
 	position:fixed;
 	top:215px;left: 255px; height: 200px; width: 70vw;
 	border:1px black;
 	margin:15px;padding:5px;padding-top:15px;padding-bottom:15px;		
 	background-color:#ffffff;
 }
-div#sidebar {
+div.sidebar {
 	position: fixed;
 	bottom: 0; top: 0; left: 0;	width: 250px;
 	padding:5px;
@@ -18,7 +18,7 @@ div#sidebar {
 	font-size: 3vh;
 	background-color:#ffffff;
 }
-div#content {
+div.content {
 	position:fixed;
 	left:255px;top:275px;width:70vw;height:65vh;
 	border:1px black;

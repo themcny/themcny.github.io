@@ -2,26 +2,36 @@ body{
 	font-family: Arial, sans-serif;
 	font-size:5vh;
 	background-color: #f2f2f2;
+	height:100vh;
+	/*border:1px solid black;*/
 }
 header{
 	position:fixed;
 	left: 3vw; width: 85vw;
 	font-size: 7vh;
 	border:1px black;
-	margin:15px;padding:5px;
+	margin:0 0 0 1.6vw;padding:3vh;
 	background-color:#f2f2f2;
 	color:#100226;
+	/*border:1px solid black;*/
 }
 details{
 	position:relative;
-	top:10vh;left: 5vw;
+	top:15vh;left: 5vw;
 	border:1px black;
 	margin:15px;padding:5px;padding-top:30px;
+	/*border:1px solid black;*/
+}
+li{
+	font-size:3vh;
+	line-height: 150%;
 }
 footer{
-	position:fixed;
-	bottom:1vh; left:3vw; width: 85vw;
+	position:absolute;
+	bottom:0vh; left:3vw; width: 85vw;
 	border:1px black;
 	margin:15px;padding:5px;
+	font-size:2vh;
 	background-color:#f2f2f2;
 	color:#000000;
+}

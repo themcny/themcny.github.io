@@ -1,10 +1,16 @@
+html{
+	height:100%;position:relative;
+}
 body {
 	font-family:Verdana,Sans-serif;
 	font-size:1.5vh;
+	
+	/*border:1px solid black;*/
+	/*height:100%;width:100%;*/
 }
 header{
 	position:relative;
-	left: 0px;
+	left: -1vh; width:99vw;
 	background-color:#B0B0B0;
 	color:#f2f2f2;
 	margin:0 0 0 0;
@@ -68,12 +74,13 @@ header>img{
 }
 .content{
 	position:absolute;
-	top:75%;
+	bottom:0;
 	/*position:absolute;
 	top:92vh;*/
 }
 .sidebar {
 	position: absolute;
+	top:10vh;
 	left: 0; width: 20%;
 	padding:5px;
 	text-align:center;
@@ -111,7 +118,7 @@ header>img{
 }
 .info {
 	position:absolute;
-	top:-5vh;left:20vw;width:70vw;height:65vh;
+	top:0;left:20vw;width:70vw;height:65vh;
 	margin:15px;padding:5px;
 	color:#181818;
 	text-align: justify;
@@ -124,11 +131,18 @@ header>img{
 	text-align: justify;
 	background:white;*/
 }
+.info>a>.load-image{
+	margin-left: 50%;
+	margin-right: auto;
+}
+.source{
+	font-size: 8px;
+}
 footer{
-	position:absolute;
-	bottom:-55vh;left:23vw;
+	position:fixed;
 	height:3vh;
-	background:#fff;
+	font-size: 8px;
+	bottom:0;
 	/*position:absolute;
 	bottom:-55vh;left:23vw;
 	height:3vh;

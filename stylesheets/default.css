@@ -4,9 +4,9 @@ body {
 }
 header{
 	/*position:fixed;
-	left: 255px; width: 70vw;*/
-	/*border:1px black;
-	/*margin:15px;padding:5px;padding-top:30px;*/
+	left: 255px; width: 70vw;
+	border:1px black;
+	margin:15px;padding:5px;padding-top:30px;*/
 	position:relative;
 	top:-1vh; left:-1vw;
 	height:5vh;width:100vw;

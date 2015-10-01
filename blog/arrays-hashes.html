@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset= "utf-8">
+		<title>Nicole's Blog Post</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+		<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				Nicole's Blog				
+				<a href="../index.html">Homepage</a>
+				<a href="index.html">Blog Index</a>
+				<a href="../index.html">About Me</a>
+			</nav>
+		</header>
+
+		<section>
+			<h1>Arrays and Hashes<div id="date">9-30-2015</div></h1>
+			<br>
+			<table>
+				<tr>
+					<th>Arrays</th>
+					<th>Hashes</th>
+				</tr>
+				<tr>
+					<td>
+						<ul>
+							<li>ordered, indexed collections of objects</li>
+							<li>can expand as needed to hold new elements</li>
+							<li>can be multi-dimensional</li>
+							<li>key is an integer - index begins at 0</li>
+							<li>order determined by integer index (ascending)</li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li>indexed collections of objects</li>
+							<li>can expand as needed to hold new elements</li>
+							<li>can be multi-dimensional</li>
+							<li>key can be any object (string, integer, array, etc.)</li>
+							<li>order of values determined by the order keys were inserted</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+			
+			<h2>Arrays</h2>
+			<img src="../imgs/array-graphic.jpg" alt="Array Graphic Representation">
+			<p>The above image is a graphic representation of the array initiated by the code below:</p>
+			<p><code>array = ['A', 'B', 'C', 'D']</code></p>
+			<p>Typing <code>array[0]</code> would return <code>'A'</code></p>
+			<p>The array can be made up of a mixture of objects as exemplified below:</p>
+			<p><code>mixed_array = ['hello', 3, -5.35, [3, 'hi']]</code></p>
+			<p><code>mixed_array[0]</code> would return <code>'hello'</code>. You can also call <code>mixed_array[3]</code> which would return the array <code>[3, 'hi']</code>.</p>
+			<p>An example of a multi-dimensional array is <code>multi_array = [['a', 'b'],['c','d']]</code>. Calling <code>multi_array[1][1]</code> would return <code>'d'</code></p>
+			<br>
+			<h2>Hashes</h2>
+			<img src="../imgs/hash-graphic.jpg" alt="Hash Graphic Representation">
+			<p>The above image is a graphic representation of the hash initiated by the code below:</p>
+			<p><code>hash = { 1 => 'A', 2 => 'B', 3 => 'C', 4 => 'D'}</code></p>
+			<p>Typing <code>hash[2]</code> would return <code>'B'</code></p>
+			<p>An example of a multi-dimensional hash is:
+				<blockquote><p><code>person = {:name => 'Nicole', :age = 21}</code></p>
+				<p><code>dog = {:name => 'Spot', :age => 3}</code></p>
+				<p><code>multi_hash = {'animal' => dog, 'human' => person}</code></p></blockquote>
+			</p>
+			<p>In order to call the name of the human you would type in <code>multi_hash['human'][:name]</code></p>
+
+		</section>
+		<footer>
+			<p>(c) Nicole L. Yee</p>
+		</footer>
+	</body>
+</html>

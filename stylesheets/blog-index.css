@@ -46,3 +46,11 @@ a{
 a:hover{
 	color:#99ffff;
 }
+.bookcase{
+	transform: rotate(90deg);
+	transform-origin: left top 0;
+	text-transform: uppercase;
+	border:1px solid black;
+	box-shadow: 2px -2px 0px rgba(0, 0, 0, 0.1);
+	float:left;
+}

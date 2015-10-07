@@ -44,7 +44,7 @@ section{
 }
 footer{
 	position:absolute;
-	bottom:-40%; left:5vw; width: 85vw;
+	bottom:-70%; left:5vw; width: 85vw;
 	font-size: 1vh;
 	border:1px black;
 	/*margin:15px;padding:5px;
@@ -72,6 +72,12 @@ table {
 	margin-right: auto;
 	margin-left: 20%;
 	display:block;
+}
+p{
+	line-height: 200%;
+}
+blockquote{
+	line-height: 100%;
 }
 code{
 	background-color: #d0d0d0;

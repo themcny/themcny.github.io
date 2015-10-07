@@ -20,7 +20,42 @@
 		<section>
 			<h1>Enumerable#cycle<div id="date">10-06-2015</div></h1>
 			<br>
-			<p>Blog Post goes here.</p>
+			<p>To call cycle, use the below format:</p>
+			<blockquote><code>enum.cycle(n){|object| block}</code></blockquote>
+			<p> Where <code>enum</code> is some collection, <code>n</code> is some positive integer or nil, and <code>block</code> is some block of code.</p>
+			
+			<p><code>#cycle</code> calls the <code>block</code> for each element of <code>enum</code> <code>n</code> times. If <code>n</code> is nil or left out (e.g. <code>enum.cycle {|object| block}</code>) then <code>#cycle</code> calls <code>block</code> for each element of <code>enum</code> forever. If <code>enum</code> is empty then <code>#cycle</code> does nothing. If a non-positive <code>n</code> is given then <code>#cycle</code> does nothing. <code>#cycle</code> returns <code>nil</code> whenever the loop finishes (if it finishes without being interrupted). If there is no block given (e.g. <code>enum.cycle(n)</code>), an enumerator is returned.</p>
+			<h3>Example 1:</h3>
+			<blockquote><code>
+				<p> > a = [1,2,3] </p>
+				<p> > a.cycle(3){|x| puts x} </p>
+				<p>1</p>
+				<p>2</p>
+				<p>3</p>
+				<p>1</p>
+				<p>2</p>
+				<p>3</p>
+				<p>1</p>
+				<p>2</p>
+				<p>3</p>
+				<p>=> nil</p>
+			</code></blockquote>
+			<p><em>it works with integers</em></p>
+			
+			<h3>Example 2:</h3>
+			<blockquote><code>
+				<p> > a = ['a','b','c'] </p>
+				<p> > a.cycle(2){|x| puts x*2} </p>
+				<p>aa</p>
+				<p>bb</p>
+				<p>cc</p>
+				<p>aa</p>
+				<p>bb</p>
+				<p>cc</p>
+				<p>=> nil</p>
+			</code></blockquote>
+			<p><em>it works on strings too!</em></p>
+
 		</section>
 		<footer>
 			<p>(c) Nicole L. Yee</p>

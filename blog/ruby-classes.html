@@ -20,7 +20,34 @@
 		<section>
 			<h1>Ruby Classes<div id="date">10-14-2015</div></h1>
 			<br>
-			<p>Blog Post goes here.</p>
+			<p>Let's say that you want to define a class <code>LivingSpace</code>. The first thing you'll want to do is write an <code>initialize</code> method for our class.</p>
+			
+			<img src="../imgs/class-initialize.jpg"/>
+			
+			<p>There are some variables that have been established in the <code>initialize</code>. These variables are traits that every 'Living Space' has- type of living space, city and neighborhood that the living space is located in, how many bedrooms and bathrooms the living space has, and how many roommates you have.</p>
+			
+			<img src="../imgs/class-initialize-input.jpg"/>
+			
+			<p>As you can see, the initialize method takes three inputs <code>type</code>, <code>city</code>, and <code>neighborhood</code>. So when the user calls a new instance of <code>LivingSpace</code> they should input three strings, one to describe the type of the <code>LivingSpace</code> as well as the city and neighborhood of the <code>LivingSpace</code>.</p>
+
+			<p>Now, you probably don't <em>just</em> want to make new instances of the <code>LivingSpace</code> class. What if you wanted to move, add a roommate, or add a bathroom to our <code>LivingSpace</code>? You can add a few more methods to perform these functions and change the traits of <code>LivingSpace</code> accordingly.</p>
+
+			<img src="../imgs/class-methods.jpg"/>
+
+			<p>In the above picture, four new methods <code>move_out</code>, <code>new_rommate</code>, <code>resize</code>, and <code>secure</code> have been created. Now that we have more than one method in our class, let's talk about instance variables. Up until now, you've probably just used local variables. <strong>Local Variables</strong> are variables that are defined within the scope of a single method. This means that if you want to define a variable in the <code>intialize</code> method and then use it in the <code>resize</code> method, you can't use a local variable that's been defined in <code>initialize</code> but not in <code>resize</code>. In order to use the variables across mulitple methods within the class, you have to use an instance variable. <strong>Instance variables</strong> always start with an <code>@</code> before the variable name (e.g. @type, @bed, @alarm, etc.). Instance variables can be used in any method within the class. As the name would suggest, instance variables can be redefined for every instance of the variable.</p>
+
+			<img src="../imgs/class-instances.jpg"/>
+
+			<p>As you can see above, you can use the <code>LivingSpace</code> class to create two different objects (Nicole's House and Janet's House) with two different sets of traits.</p>
+
+			<p>In order to use class methods, you call it in the same way you've been calling methods ('object name'.'method').</p>
+
+			<img src="../imgs/class-method-call.jpg"/>
+
+			<p>With those method calls, you'll see:</p>
+			<img src="../imgs/class-bash-call.jpg"/>
+
+
 		</section>
 		<footer>
 			<p>(c) Nicole L. Yee</p>

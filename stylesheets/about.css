@@ -1,0 +1,16 @@
+body{
+
+}
+
+section{
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: left;
+	margin-top: 6vh;
+	width:70%;
+}
+
+img{
+	display: inline;
+}

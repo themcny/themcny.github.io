@@ -44,7 +44,7 @@ section{
 }
 footer{
 	position:absolute;
-	bottom:-70%; left:5vw; width: 85vw;
+	bottom:-120%; left:5vw; width: 85vw;
 	font-size: 1vh;
 	border:1px black;
 	/*margin:15px;padding:5px;

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset= "utf-8">
+		<title>Nicole's Blog Post</title>
+		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+		<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+		<link rel="stylesheet" type="text/css" href="../stylesheets/blog-tech-canvas.css">
+		<script src="blog-tech-canvas.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				Nicole's Blog				
+				<a href="../index.html">Homepage</a>
+				<a href="index.html">Blog Index</a>
+				<a href="../index.html">About Me</a>
+			</nav>
+		</header>
+
+		<section>
+			<h1>Recursion<div id="date">9-30-2015</div></h1>
+			<br>
+			<p>A recursive function is one that calls itself within the function. Below is a function that calls the nth number of the Fibonacci Sequence. As you can see, this is a recursive function as it calls itself within the function in order to find the number.</p>
+			<img src="../imgs/fib-seq.jpg"/>
+			<p>How does this work?</p>
+			<p>The Fibonacci Sequence begins with two 1's. Every subsequent number is the sum of the two numbers before that number. So the third number in the sequence is 2, the fourth is 3, the fifth is 4, and so on. Knowing that logic, our Fibonacci function doesn't look so crazy right? <code>fib(n-2) + fib(n-1)</code> is the code version of: <em>"Every subsequent number is the sum of the two numbers before that number."</em></p>
+			<p>Not only can we write some complicated functions with recursion (and with fewer lines), we can also use recursion to do some visually cool things. For example, we can use recursion to draw fractals in canvas with JavaScript.</p>
+			<canvas id="canvas"></canvas>
+		</section> 
+		<footer>
+			<p>(c) Nicole L. Yee</p>
+		</footer>
+	</body>
+</html>

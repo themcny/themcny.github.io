@@ -9,6 +9,7 @@ var hero = {
 		foot: 10
 	},
 	weapon: false,
+	alive: true,
 	pos: {
 		x: 0,
 		y: 0
@@ -18,6 +19,7 @@ var hero = {
 // The Enemy - A Punching Bag
 var punchingBag = {
 	health: 1000,
+	alive: true,
 	pos: {
 		x: 0,
 		y: 0
@@ -37,6 +39,13 @@ var sword = {
 	}
 }
 
+//Function to check if Alive or Dead?
+/*
+function checkLife(person){
+	if person.alive === false
+		console.log('you are dead');//show game over screen
+}
+*/
 
 // Function to equip a sword and increase damage
 function equip(item, person){
@@ -106,6 +115,8 @@ document.onkeydown = function(e) {
             //hero.style.left = (hero.style.left.replace('px','')*1)-5;
             addAclass('hero', 'walkleft');
             setInterval(function() { removeAclass('hero', 'walkleft'); }, 1500);
+            //var pos = $("#hero").position();
+        	//$("#hero").css('left',pos.left - offset);
             break;
         case 38:
             //alert('up');
@@ -116,6 +127,8 @@ document.onkeydown = function(e) {
             //hero.style.left = (hero.style.left.replace('px','')*1)+5;
             addAclass('hero', 'walkright');
             setInterval(function() { removeAclass('hero', 'walkright'); }, 1500);
+            //var pos = $("#hero").position();
+        	//$("#hero").css('left', pos.left + offset);
             break;
         case 40:
         	//alert('down');

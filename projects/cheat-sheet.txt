@@ -3,4 +3,39 @@ Ruby Inheritence
 - relationship between two classes
 - classes lower in the 'hierarchy' get all the features of the classes above it in the hierarchy
 - classes lower in the hierachy can also add specific features that apply only to itself
-- 
+- In Ruby, a class can only inherit from a single other class.
+- Inheritance allows you to create a class that is a refinement or specialization of another class. Inheritance is indicated with <.
+- There will be situations where certain properties of the super-class should not be inherited by a particular subclass. Though birds generally know how to fly, penguins are a flightless subclass of birds. In the example p034bird.rb below, we override fly in class Penguin:
+- the smaller class is a subclass and the larger class is a super-class. The subclass is sometimes also known as a derived or child class and the super-class as base or parent class
+
+Consider the code:
+
+class Dog  
+  def initialize(breed)  
+    @breed = breed  
+  end  
+  
+  def to_s  
+    "(#@breed, #@name)"  
+  end  
+end  
+  
+class Lab < Dog  
+  def initialize(breed, name)  
+    super(breed)  
+    @name = name  
+  end  
+end  
+  
+puts Lab.new("Labrador", "Benzy").to_s # .to_s is called implicitly with any puts or print or p method call  
+When you invoke super with arguments, Ruby sends a message to the parent of the current object, asking it to invoke a method of the same name as the method invoking super. super sends exactly those arguments.
+
+Because this code behaves as expected, you may be tempted to say that these variables are inherited. That is not how Ruby works.
+
+All Ruby objects have a set of instance variables. These are not defined by the objects's class - they are simply created when a value is assigned to them. Because instance variables are not defined by a class, they are unrelated to subclassing and the inheritance mechanism.
+
+In the above code, Lab defines an initialize method that chains to the initialize method of its super-class. The chained method assigns values to the variable @breed, which makes those variables come into existence for a particular instance of Lab.
+
+The reason that they sometimes appear to be inherited is that instance variables are created by the methods that first assign values to them, and those methods are often inherited or chained.
+
+Since instance variables have nothing to do with inheritance, it follows that an instance variable used by a subclass cannot "shadow" an instance variable in the super-class. If a subclass uses an instance variable with the same name as a variable used by one of its ancestors, it will overwrite the value of its ancestor's variable.

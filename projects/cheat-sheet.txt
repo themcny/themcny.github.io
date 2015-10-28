@@ -1,0 +1,6 @@
+Ruby Inheritence
+
+- relationship between two classes
+- classes lower in the 'hierarchy' get all the features of the classes above it in the hierarchy
+- classes lower in the hierachy can also add specific features that apply only to itself
+- 

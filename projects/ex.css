@@ -38,21 +38,19 @@
     box-sizing: border-box;
     color: white;
     text-align: center;
-    background-color: black;
+    background-color: #aaa;
 }
 h3 {
     position:relative;
     top:40%;
     text-align: center;
 }
-p {
-   position:relative;
-   top:5%;
+/*
+body{
+    width:100vw;
 }
-code {
-  text-align: left;
-  position: relative;
-  left:5%;
-  background-color: blue;
-  color:#B22222;
+*/
+footer{
+    position:absolute;
+    bottom:0px;
 }

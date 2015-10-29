@@ -5,6 +5,7 @@
 		<title>SQL Cheat Sheet</title>
 		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
 		<link rel="stylesheet" type="text/css" href="sql-cheat.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   		<script src="sql-cheat.js" type="text/javascript"></script>
 	</head>
 
@@ -14,381 +15,455 @@
 		</header>
 
 		<section>
-		<div id="deck">
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">SELECT</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>SELECT</h3>
 				</div>
-				<div class="back">
-					<span class="def">Extracts data from a database.</span>
-					<p></p>
-					<span class="ex">SELECT column_name_1, column_name_2 
-					FROM table_name;</span>
-				</div>
-			</div>
-
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">UPDATE</span>
-				</div>
-				<div class="back">
-					<span class="def">updates data in a database</span>
-					<p></p>
-					<span class="ex">UPDATE table_name
-					SET column1=value, column2=value,...
-					WHERE some_column=some_value;</span>
+				<div class="back face center">
+					<br>
+					<p>extracts data from a database</p>
+					<br>
+					<code><p>SELECT column_name_1, column_name_2</p> 
+					<p>FROM table_name;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">DELETE</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>UPDATE</h3>
 				</div>
-				<div class="back">
-					<span class="def">deletes data from a database</span>
-					<p></p>
-					<span class="ex">DELETE FROM table_name
-					WHERE some_column=some_value;
-					or
-					DELETE FROM table_name;
-					(Note: Deletes the entire table!!)
-					DELETE * FROM table_name;
-					(Note: Deletes the entire table!!)</span>
+				<div class="back face center">
+					<br>
+					<p>updates data in a database.</p>
+					<br>
+					<code><p>UPDATE table_name</p>
+					<p>SET column1=value, column2=value,...</p>
+					<p>WHERE some_column=some_value;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">INSERT INTO</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>DELETE</h3>
 				</div>
-				<div class="back">
-					<span class="def">inserts new data into a database</span>
-					<p></p>
-					<span class="ex">INSERT INTO table_name
-					VALUES (value1, value2, value3,....);
-					or
-					INSERT INTO table_name
-					(column1, column2, column3,...)
-					VALUES (value1, value2, value3,....);</span>
+				<div class="back face center">
+					<br>
+					<p>deletes data from a database</p>
+					<br>
+					<code><p>DELETE FROM table_name</p>
+					<p>WHERE some_column=some_value;</p>
+					<p>or</p>
+					<p>DELETE * FROM table_name;</p>
+					<p>(Note: Deletes the entire table!!)</p></code>
 				</div>
 			</div>
-
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">CREATE DATABASE</span>
+		</div>
+	
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>INSERT INTO</h3>
 				</div>
-				<div class="back">
-					<span class="def">creates a new database</span>
-					<p></p>
-					<span class="ex">CREATE DATABASE database_name;</span>
-				</div>
-			</div>
-
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">CREATE TABLE</span>
-				</div>
-				<div class="back">
-					<span class="def">creates a new table</span>
-					<p></p>
-					<span class="ex">CREATE TABLE table_name
-					(
-					column_name1 data_type,
-					column_name2 data_type,
-					column_name3 data_type,
-					...
-					);</span>
+				<div class="back face center">
+					<br>
+					<p>inserts new data into a database</p>
+					<br>
+					<code><p>INSERT INTO table_name</p>
+					<p>(column1, column2, column3,...)</p>
+					<p>VALUES (value1, value2, value3,....);</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">ALTER TABLE</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>CREATE DATABASE</h3>
 				</div>
-				<div class="back">
-					<span class="def">modifies a table</span>
-					<p></p>
-					<span class="ex">ALTER TABLE table_name 
-					ADD column_name datatype;
-					or
-
-					ALTER TABLE table_name 
-					DROP COLUMN column_name;</span>
+				<div class="back face center">
+					<br>
+					<p>creates a new database</p>
+					<br>
+					<code><p>CREATE DATABASE database_name;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">DROP TABLE</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>CREATE TABLE</h3>
 				</div>
-				<div class="back">
-					<span class="def">updates data in a database</span>
-					<p></p>
-					<span class="ex">DROP TABLE table_name;</span>
+				<div class="back face center">
+					<p>creates a new table</p>
+					<br>
+					<code><p>CREATE TABLE table_name</p>
+					<p>(
+					column_name1 data_type,</p>
+					<p>column_name2 data_type,</p>
+					<p>column_name3 data_type,</p>
+					<p>...
+					);</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">CREATE INDEX</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>ALTER TABLE</h3>
 				</div>
-				<div class="back">
-					<span class="def">creates an index (search key)</span>
-					<p></p>
-					<span class="ex">CREATE INDEX index_name
-					ON table_name (column_name);</span>
+				<div class="back face center">
+					<br>
+					<p>modifies a table</p>
+					<br>
+					<code><p>ALTER TABLE table_name</p>
+					<p>ADD column_name datatype;</p>
+					<p>or</p>
+					<p>ALTER TABLE table_name </p>
+					<p>DROP COLUMN column_name;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">DROP INDEX</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>DROP TABLE</h3>
 				</div>
-				<div class="back">
-					<span class="def">deletes an index</span>
-					<p></p>
-					<span class="ex">DROP INDEX table_name.index_name (SQL Server);</span>
+				<div class="back face center">
+					<br>
+					<p>updates data in a database</p>
+					<br>
+					<code><p>DROP TABLE table_name;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">SELECT*</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>CREATE INDEX</h3>
 				</div>
-				<div class="back">
-					<span class="def">selects all columns from a table</span>
-					<p></p>
-					<span class="ex">SELECT*
-					FROM table_name;</span>
+				<div class="back face center">
+					<br>
+					<p>creates an index (search key)</p>
+					<br>
+					<code><p>CREATE INDEX index_name</p>
+					<p>ON table_name (column_name);</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">SELECT DISTINCT</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>DROP INDEX</h3>
 				</div>
-				<div class="back">
-					<span class="def">used to return only distinct (different) values.</span>
-					<p></p>
-					<span class="ex">SELECT DISTINCT column_name,column_name
-					FROM table_name;</span>
+				<div class="back face center">
+					<br>
+					<p>deletes an index</p>
+					<br>
+					<code><p>DROP INDEX table_name.index_name (SQL Server);</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">WHERE</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>SELECT*</h3>
 				</div>
-				<div class="back">
-					<span class="def">used to extract only those records that fulfill a specified criterion.</span>
-					<p></p>
-					<span class="ex">SELECT column_name,column_name
-					FROM table_name
-					WHERE column_name operator value;</span>
+				<div class="back face center">
+					<br>
+					<p>selects all columns from a table</p>
+					<br>
+					<code><p>SELECT*</p>
+					<p>FROM table_name;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">AND & OR</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>SELECT DISTINCT</h3>
 				</div>
-				<div class="back">
-					<span class="def">used to filter records based on more than one condition.</span>
-					<p></p>
-					<span class="ex">SELECT column_name(s)
-					FROM table_name
-					WHERE condition
-					AND|OR condition;</span>
+				<div class="back face center">
+					<br>
+					<p>used to return only distinct (different) values.</p>
+					<br>
+					<code><p>SELECT DISTINCT column_name,column_name</p>
+					<p>FROM table_name;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">ORDER BY</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>WHERE</h3>
 				</div>
-				<div class="back">
-					<span class="def">used to sort the result-set by one or more columns</span>
-					<p></p>
-					<span class="ex">SELECT column_name, column_name
-					FROM table_name
-					ORDER BY column_name ASC|DESC, column_name ASC|DESC;</span>
+				<div class="back face center">
+					<br>
+					<p>used to extract only those records that fulfill a specified criterion.</p>
+					<br>
+					<code><p>SELECT column_name,column_name</p>
+					<p>FROM table_name</p>
+					<p>WHERE column_name operator value;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">SELECT TOP</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>AND & OR</h3>
 				</div>
-				<div class="back">
-					<span class="def">used to specify the number of records to return</span>
-					<p></p>
-					<span class="ex">SELECT column_name(s)
-					FROM table_name
-					LIMIT number;</span>
+				<div class="back face center">
+					<br>
+					<p>used to filter records based on more than one condition.</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table_name</p>
+					<p>WHERE condition</p>
+					<p>AND|OR condition;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">LIKE</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>ORDER BY</h3>
 				</div>
-				<div class="back">
-					<span class="def">used in a WHERE clause to search for a specified pattern in a column</span>
-					<p></p>
-					<span class="ex">SELECT column_name(s)
-					FROM table_name
-					WHERE column_name LIKE pattern;</span>
+				<div class="back face center">
+					<br>
+					<p>used to sort the result-set by one or more columns</p>
+					<br>
+					<code><p>SELECT column_name, column_name</p>
+					<p>FROM table_name</p>
+					<p>ORDER BY column_name ASC|DESC, column_name ASC|DESC;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">IN</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>SELECT TOP</h3>
 				</div>
-				<div class="back">
-					<span class="def">The IN operator allows you to specify multiple values in a WHERE clause</span>
-					<p></p>
-					<span class="ex">SELECT column_name(s)
-					FROM table_name
-					WHERE column_name IN (value1,value2,...);</span>
+				<div class="back face center">
+					<br>
+					<p>used to specify the number of records to return</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table_name</p>
+					<p>LIMIT number;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">BETWEEN</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>LIKE</h3>
 				</div>
-				<div class="back">
-					<span class="def"> selects values within a range. The values can be numbers, text, or dates.</span>
-					<p></p>
-					<span class="ex">SELECT column_name(s)
-					FROM table_name
-					WHERE column_name BETWEEN value1 AND value2;</span>
+				<div class="back face center">
+					<br>
+					<p>used in a WHERE clause to search for a specified pattern in a column</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table_name</p>
+					<p>WHERE column_name LIKE pattern;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">INNER JOIN</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>IN</h3>
 				</div>
-				<div class="back">
-					<span class="def">selects all rows from both tables as long as there is a match between the columns in both tables</span>
-					<p></p>
-					<span class="ex">SELECT column_name(s)
-					FROM table1
-					INNER JOIN table2
-					ON table1.column_name=table2.column_name;</span>
+				<div class="back face center">
+					<br>
+					<p>The IN operator allows you to specify multiple values in a WHERE clause</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table_name</p>
+					<p>WHERE column_name IN (value1,value2,...);</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">LEFT JOIN</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>BETWEEN</h3>
 				</div>
-				<div class="back">
-					<span class="def">returns all rows from the left table (table1), with the matching rows in the right table (table2). The result is NULL in the right side when there is no match.</span>
-					<p></p>
-					<span class="ex">SELECT column_name(s)
-					FROM table1
-					LEFT JOIN table2
-					ON table1.column_name=table2.column_name;</span>
+				<div class="back face center">
+					<br>
+					<p>Selects values within a range. The values can be numbers, text, or dates.</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table_name</p>
+					<p>WHERE column_name BETWEEN value1 AND value2;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">RIGHT JOIN</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>INNER JOIN</h3>
 				</div>
-				<div class="back">
-					<span class="def">returns all rows from the right table (table2), with the matching rows in the left table (table1). The result is NULL in the left side when there is no match.</span>
-					<p></p>
-					<span class="ex">SELECT column_name(s)
-					FROM table1
-					RIGHT JOIN table2
-					ON table1.column_name=table2.column_name;</span>
+				<div class="back face center">
+					<br>
+					<p>selects all rows from both tables as long as there is a match between the columns in both tables</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table1</p>
+					<p>INNER JOIN table2</p>
+					<p>ON table1.column_name=table2.column_name;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">FULL OUTER JOIN</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>LEFT JOIN</h3>
 				</div>
-				<div class="back">
-					<span class="def">returns all rows from the left table (table1) and from the right table (table2)</span>
-					<p></p>
-					<span class="ex">SELECT column_name(s)
-					FROM table1
-					FULL OUTER JOIN table2
-					ON table1.column_name=table2.column_name;</span>
+				<div class="back face center">
+					<br>
+					<p>returns all rows from the left table (table1), with the matching rows in the right table (table2). The result is NULL in the right sclasse when there is no match.</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table1</p>
+					<p>LEFT JOIN table2</p>
+					<p>ON table1.column_name=table2.column_name;</p></code>
 				</div>
 			</div>
+		</div>
 
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">UNION</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>RIGHT JOIN</h3>
 				</div>
-				<div class="back">
-					<span class="def">used to combine the result-set of two or more SELECT statements - selects only distinct values by default</span>
-					<p></p>
-					<span class="ex">SELECT column_name(s) FROM table1
-					UNION
-					SELECT column_name(s) FROM table2;</span>
+				<div class="back face center">
+					<br>
+					<p>returns all rows from the right table (table2), with the matching rows in the left table (table1). The result is NULL in the left sclasse when there is no match.</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table1</p>
+					<p>RIGHT JOIN table2</p>
+					<p>ON table1.column_name=table2.column_name;</p></code>
 				</div>
 			</div>
-
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">UNION ALL</span>
-				</div>
-				<div class="back">
-					<span class="def"> used to combine the result-set of two or more SELECT statements - allows duplicate values</span>
-					<p></p>
-					<span class="ex">SELECT column_name(s) FROM table1
-					UNION ALL
-					SELECT column_name(s) FROM table2;</span>
-				</div>
-			</div>
-
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">SELECT INTO</span>
-				</div>
-				<div class="back">
-					<span class="def">copies data from one table and inserts it into a new table</span>
-					<p></p>
-					<span class="ex">SELECT column_name(s)
-					INTO newtable [IN externaldb]
-					FROM table1;</span>
-				</div>
-			</div>
-
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">INSERT INTO SELECT</span>
-				</div>
-				<div class="back">
-					<span class="def">copies data from one table and inserts it into an existing table</span>
-					<p></p>
-					<span class="ex">INSERT INTO table2
-					(column_name(s))
-					SELECT column_name(s)
-					FROM table1;</span>
-				</div>
-			</div>
+		</div>
 		
-			<div class="card effect__click">
-				<div class="front">
-					<span class="command">AS (alias)</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>FULL OUTER JOIN</h3>
 				</div>
-				<div class="back">
-					<span class="def">c used to temporarily rename a table or a column heading</span>
-					<p></p>
-					<span class="ex">SELECT column_name AS column_alias
-					FROM table_name
-					or
+				<div class="back face center">
+					<br>
+					<p>returns all rows from the left table (table1) and from the right table (table2)</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table1</p>
+					<p>FULL OUTER JOIN table2</p>
+					<p>ON table1.column_name=table2.column_name;</p></code>
+				</div>
+			</div>
+		</div>
 
-					SELECT column_name
-					FROM table_name  AS table_alias</span>
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>UNION</h3>
+				</div>
+				<div class="back face center">
+					<br>
+					<p>used to combine the result-set of two or more SELECT statements - selects only distinct values by default</p>
+					<br>
+					<code><p>SELECT column_name(s) FROM table1</p>
+					<p>UNION</p>
+					<p>SELECT column_name(s) FROM table2;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>UNION ALL</h3>
+				</div>
+				<div class="back face center">
+					<br>
+					<p>used to combine the result-set of two or more SELECT statements - allows duplicate values</p>
+					<br>
+					<code><p>SELECT column_name(s) FROM table1</p>
+					<p>UNION ALL</p>
+					<p>SELECT column_name(s) FROM table2;</p></code>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>SELECT INTO</h3>
+				</div>
+				<div class="back face center">
+					<br>
+					<p>copies data from one table and inserts it into a new table</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>INTO newtable [IN externaldb]</p>
+					<p>FROM table1;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>INSERT INTO SELECT</h3>
+				</div>
+				<div class="back face center">
+					<br>
+					<p>copies data from one table and inserts it into an existing table</p>
+					<br>
+					<code><p>INSERT INTO table2</p>
+					<p>(column_name(s))</p>
+					<p>SELECT column_name(s)</p>
+					<p>FROM table1;</p></code>
+				</div>
+			</div>
+		</div>
+		
+		<div class="card_deck">
+			<div class="shadow f1_card">
+				<div class="front face">
+					<h3>AS (alias)</h3>
+				</div>
+				<div class="back face center">
+					<br>
+					<p>used to temporarily rename a table or a column heading</p>
+					<br>
+					<code><p>SELECT column_name AS column_alias</p>
+					<p>FROM table_name</p>
+					<p>or</p>
+					<p>SELECT column_name</p>
+					<p>FROM table_name  AS table_alias</p></code>
 				</div>
 			</div>
 

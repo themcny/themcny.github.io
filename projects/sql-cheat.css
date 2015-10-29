@@ -18,10 +18,9 @@
     transform-style: preserve-3d;
     transition: all 1.0s linear;
 }
-.card_deck.active .f1_card {
+.card_deck.flip .f1_card {
     -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-    box-shadow: -5px 5px 5px #aaa;
+    /*transform: rotateY(180deg);*/
 }
 .face {
     position: absolute;
@@ -34,7 +33,7 @@
 .face.back {
     display: block;
     -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    /*transform: rotateY(180deg);*/
     box-sizing: border-box;
     color: white;
     text-align: center;

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset= "utf-8">
+		<title>SQL Cheat Sheet</title>
+		<link rel="stylesheet" type="text/css" href="sql-cheat.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  		<script src="sql-cheat.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<header>
+			<a href="../index.html">Back to Projects Index</a>
+			<h1>SQL Cheat Sheet</h1>
+		</header>
+		<div id="wrapper">
+		<aside>
+			<p>SQL stands for Structured Query Language</p>
+			<p>SQL lets you access and manipulate databases</p>
+			
+			<p>A database most often contains one or more tables. Each table is identified by a name (e.g. "Customers" or "Orders"). Tables contain records (rows) with data.</p>
+
+			<p>Below we look at some of the common SQL commands and functions.</p>
+			<p><em>Note: The CSS animations work best in Chrome (or Safari)</em></p>
+		</aside>
+
+		<section>		
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">SELECT</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>extracts data from a database</p>
+					<br>
+					<code><p>SELECT column_name_1, column_name_2</p> 
+					<p>FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">UPDATE</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>updates data in a database.</p>
+					<br>
+					<code><p>UPDATE table_name</p>
+					<p>SET column1=value, column2=value,...</p>
+					<p>WHERE some_column=some_value;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">DELETE</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>deletes data from a database</p>
+					<br>
+					<code><p>DELETE FROM table_name</p>
+					<p>WHERE some_column=some_value;</p>
+					<p>or</p>
+					<p>DELETE * FROM table_name;</p>
+					<p>(Note: Deletes the entire table!!)</p></code>
+				</div>
+			</div>
+		</div>
+	
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">INSERT INTO</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>inserts new data into a database</p>
+					<br>
+					<code><p>INSERT INTO table_name</p>
+					<p>(column1, column2, column3,...)</p>
+					<p>VALUES (value1, value2, value3,....);</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">CREATE DATABASE</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>creates a new database</p>
+					<br>
+					<code><p>CREATE DATABASE database_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">CREATE TABLE</span>
+				</div>
+				<div class="back side">
+					<p>creates a new table</p>
+					<br>
+					<code><p>CREATE TABLE table_name</p>
+					<p>(
+					column_name1 data_type,</p>
+					<p>column_name2 data_type,</p>
+					<p>column_name3 data_type,</p>
+					<p>...
+					);</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">ALTER TABLE</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>modifies a table</p>
+					<br>
+					<code><p>ALTER TABLE table_name</p>
+					<p>ADD column_name datatype;</p>
+					<p>or</p>
+					<p>ALTER TABLE table_name </p>
+					<p>DROP COLUMN column_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">DROP TABLE</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>updates data in a database</p>
+					<br>
+					<code><p>DROP TABLE table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">CREATE INDEX</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>creates an index (search key)</p>
+					<br>
+					<code><p>CREATE INDEX index_name</p>
+					<p>ON table_name (column_name);</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">DROP INDEX</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>deletes an index</p>
+					<br>
+					<code><p>DROP INDEX table_name.index_name (SQL Server);</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">SELECT*</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>selects all columns from a table</p>
+					<br>
+					<code><p>SELECT*</p>
+					<p>FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">SELECT DISTINCT</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>used to return only distinct (different) values.</p>
+					<br>
+					<code><p>SELECT DISTINCT column_name,column_name</p>
+					<p>FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">WHERE</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>used to extract only those records that fulfill a specified criterion.</p>
+					<br>
+					<code><p>SELECT column_name,column_name</p>
+					<p>FROM table_name</p>
+					<p>WHERE column_name operator value;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">AND & OR</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>used to filter records based on more than one condition.</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table_name</p>
+					<p>WHERE condition</p>
+					<p>AND|OR condition;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">ORDER BY</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>used to sort the result-set by one or more columns</p>
+					<br>
+					<code><p>SELECT column_name, column_name</p>
+					<p>FROM table_name</p>
+					<p>ORDER BY column_name ASC|DESC, column_name ASC|DESC;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">SELECT TOP</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>used to specify the number of records to return</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table_name</p>
+					<p>LIMIT number;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">LIKE</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>used in a WHERE clause to search for a specified pattern in a column</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table_name</p>
+					<p>WHERE column_name LIKE pattern;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">IN</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>The IN operator allows you to specify multiple values in a WHERE clause</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table_name</p>
+					<p>WHERE column_name IN (value1,value2,...);</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">BETWEEN</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>Selects values within a range. The values can be numbers, text, or dates.</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table_name</p>
+					<p>WHERE column_name BETWEEN value1 AND value2;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">INNER JOIN</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>selects all rows from both tables as long as there is a match between the columns in both tables</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table1</p>
+					<p>INNER JOIN table2</p>
+					<p>ON table1.column_name=table2.column_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">LEFT JOIN</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>returns all rows from the left table (table1), with the matching rows in the right table (table2). The result is NULL in the right sclasse when there is no match.</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table1</p>
+					<p>LEFT JOIN table2</p>
+					<p>ON table1.column_name=table2.column_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">RIGHT JOIN</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>returns all rows from the right table (table2), with the matching rows in the left table (table1). The result is NULL in the left sclasse when there is no match.</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table1</p>
+					<p>RIGHT JOIN table2</p>
+					<p>ON table1.column_name=table2.column_name;</p></code>
+				</div>
+			</div>
+		</div>
+		
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">FULL OUTER JOIN</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>returns all rows from the left table (table1) and from the right table (table2)</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>FROM table1</p>
+					<p>FULL OUTER JOIN table2</p>
+					<p>ON table1.column_name=table2.column_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">UNION</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>used to combine the result-set of two or more SELECT statements - selects only distinct values by default</p>
+					<br>
+					<code><p>SELECT column_name(s) FROM table1</p>
+					<p>UNION</p>
+					<p>SELECT column_name(s) FROM table2;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">UNION ALL</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>used to combine the result-set of two or more SELECT statements - allows duplicate values</p>
+					<br>
+					<code><p>SELECT column_name(s) FROM table1</p>
+					<p>UNION ALL</p>
+					<p>SELECT column_name(s) FROM table2;</p></code>
+				</div>
+			</div>
+		</div>
+		
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">SELECT INTO</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>copies data from one table and inserts it into a new table</p>
+					<br>
+					<code><p>SELECT column_name(s)</p>
+					<p>INTO newtable [IN externaldb]</p>
+					<p>FROM table1;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">INSERT INTO SELECT</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>copies data from one table and inserts it into an existing table</p>
+					<br>
+					<code><p>INSERT INTO table2</p>
+					<p>(column_name(s))</p>
+					<p>SELECT column_name(s)</p>
+					<p>FROM table1;</p></code>
+				</div>
+			</div>
+		</div>
+		
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">AS (alias)</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>used to temporarily rename a table or a column heading</p>
+					<br>
+					<code><p>SELECT column_name AS column_alias</p>
+					<p>FROM table_name</p>
+					<p>or</p>
+					<p>SELECT column_name</p>
+					<p>FROM table_name  AS table_alias</p></code>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">AVG()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>returns the average value of a numeric column</p>
+					<br>
+					<code><p>SELECT AVG(column_name) FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">COUNT()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>returns the number of rows that matches a specified criteria</p>
+					<br>
+					<code><p>SELECT COUNT(column_name) FROM table_name;</p>
+					<p>or</p> 
+					<p>SELECT COUNT(*) FROM table_name;</p>
+					<p>or</p>
+					<p>SELECT COUNT(DISTINCT column_name) FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">FIRST()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>returns the first value of the selected column</p>
+					<br>
+					<code><p>SELECT FIRST(column_name) FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">LAST()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p> returns the last value of the selected column</p>
+					<br>
+					<code><p>SELECT LAST(column_name) FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">MAX()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>returns the largest value of the selected column</p>
+					<br>
+					<code><p>SELECT MAX(column_name) FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">MIN()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>returns the smallest value of the selected column</p>
+					<br>
+					<code><p>SELECT MIN(column_name) FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">SUM()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>returns the total sum of a numeric column</p>
+					<br>
+					<code><p>SELECT SUM(column_name) FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">GROUP BY</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>used in conjunction with the aggregate functions to group the result-set by one or more columns</p>
+					<br>
+					<code><p>SELECT column_name, aggregate_function(column_name)</p>
+					<p>FROM table_name</p>
+					<p>WHERE column_name operator value</p>
+					<p>GROUP BY column_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">HAVING</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions</p>
+					<br>
+					<code><p>SELECT column_name, aggregate_function(column_name)</p>
+					<p>FROM table_name</p>
+					<p>WHERE column_name operator value</p>
+					<p>GROUP BY column_name</p>
+					<p>HAVING aggregate_function(column_name) operator value;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">UCASE()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>converts the value of a field to uppercase</p>
+					<br>
+					<code><p>SELECT UCASE(column_name) FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">LCASE()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>converts the value of a field to lowercase</p>
+					<br>
+					<code><p>SELECT LCASE(column_name) FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">MID()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>used to extract characters from a text field</p>
+					<br>
+					<code><p>SELECT MID(column_name,start[,length]) AS some_name FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">LEN()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>returns the length of the value in a text field</p>
+					<br>
+					<code><p>SELECT LEN(column_name) FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">ROUND()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>used to round a numeric field to the number of decimals specified</p>
+					<br>
+					<code><p>SELECT ROUND(column_name,decimals) FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">NOW()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>returns the current system date and time</p>
+					<br>
+					<code><p>SELECT NOW() FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+
+		<div class="each_card">
+			<div class="flip_card">
+				<div class="front side">
+					<span class="command">FORMAT()</span>
+				</div>
+				<div class="back side">
+					<br>
+					<p>used to format how a field is to be displayed</p>
+					<br>
+					<code><p>SELECT FORMAT(column_name,format) FROM table_name;</p></code>
+				</div>
+			</div>
+		</div>
+	</section>
+		<footer>
+			<a href="../wire-frame-display.html">WireFrame</a>
+			<p>(c) Nicole L. Yee</p>
+		</footer>
+	</div>
+	</body>
+</html>

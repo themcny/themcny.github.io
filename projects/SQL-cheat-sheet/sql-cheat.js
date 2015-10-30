@@ -1,5 +1,5 @@
 $(function () {
-$('.card_deck').click(function() {
+$('.each_card').click(function() {
     $(this).toggleClass('flip');
 });
 });

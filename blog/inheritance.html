@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset= "utf-8">
+		<title>Inheritance in JS and Ruby</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!--<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">-->
+		<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">Nicole's Notes</a>
+		    </div>
+		    <div>
+		      <ul class="nav navbar-nav">
+		        <li><a href="../index.html">Home Page</a></li>
+		        <li><a href="#">About Me</a></li>
+		        <li class="active"><a href="#">Blog Index</a></li>
+		        <li><a href="#">Most Recent Post</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+
+		<section>
+			<h1>Inheritance in Ruby and JavaScript<div id="date">11-01-2015</div></h1>
+			<br>
+			
+			<h3>Ruby Inheritance</h3>
+			
+			<p>Inheritance refers to a relationship between two classes. Ruby is a language that doesn't support multiple inheritance (a feature that allows classes to inherit 'stuff' from multiple classes). A class can inherit from a different class that in turn inherits from a third class, but a single class cannot inherit directly from many different classes.</p>
+			<p>The class that is higher up on the hierarchy (the one who's features are being inherited) is called a <em>super-class</em> or a <em>parent class</em>. The class that is lower on the hierarchy (the classes doing the inheritance) is called the <em>subclass</em> or a <em>child class</em>.</p>
+
+			<p>We can think of a parent class as a broad category, like food. It describes a lot of different kinds of things and encompasses many different subcategories. All those subcategories might have a common trait (in the case of the subcategories under the umbrella of food, a common trait would be that it is edible).</p>
+
+			<img src="../imgs/food-meat.jpg"/>
+
+			<p>That code will put:</p>
+			<blockquote>
+			<p><code>Yes, it is edible.</code></p>
+			<p><code>Yes, it is protein from an animal.</code></p>
+			</blockquote>
+
+			<p>However, sometimes, all the traits from the parent class shouldn't be applied to the child class. In this case, it is possible to override those features with more applicable features in a child class.</p>
+
+			<img src="../imgs/food-rotten.jpg"/>
+
+			<p>That code will put:</p>
+			<blockquote>
+				<p><code>No. No longer edible.</code></p>
+			</blockquote>
+
+			<p>What about instance variables? How does inheritance work on those? All Ruby objects have instance variables. These instance variabeles are not defined by their object's class. They are created when a value is assigned to them. Therefore, instance variables are not related to the way variables and features are inherited in Ruby.</p>
+
+			<p>Although, it can look like instance variables are inherited, this is usually a result of the fact that the methods (which assign values to those instance variables) are inherited.</p>
+
+			<img src="../imgs/super-method.jpg"/>
+
+			<p>That code will put:</p>
+			<blockquote>
+				<p><code>orange</code></p>
+			</blockquote>
+
+			<p>In the above code, we put <code>super</code> into the <code>Fruit</code> class's initialize method. <code>super</code> takes the arguments it is given sends those arguments to the method of the same name in the parent of the object invoking <code>super</code>. As you can see above, <code>super</code> is called with one argument; <code>type</code>. So Ruby goes to the parent of the current object (the <code>Fruit</code> class) and invokes the method of the same name (<code>initialize</code>) with the argument(s) passed through <code>super</code> (in this case the <code>type</code>, 'orange'.)</p>
+
+			<p>If we were to use an instance variable named <code>@type</code> in both the parent class (<code>Food</code>) and the child class (<code>Fruit</code>), the instance variable (<code>@type</code>) in the child class (<code>Fruit</code>) would overwrite the value given to that instance variable in the parent class (<code>Food</code>).
+			<hr>
+			<br>
+			
+			<h3>JavaScript Inheritance</h3>
+			
+			<p>JavaScript, in contrast to Ruby, has no classes. Instead, in JavaScript every object can be used as a 'prototype' for another object. The prototype defines the functions and members that the object derived from that prototype can use.</p>
+
+			<img src="../imgs/food-js.jpg"/>
+
+			<p>In the above image, all we've done is create <code>classFood</code>, given it a <code>type</code> property with a value 'edible', and added a <code>display</code> function to <code>classFood</code> that prints the <code>type</code> to the console. Then we've created an instance of <code>classFood</code> and set it equal to a new variable <code>meat</code> before calling the <code>display</code> function on <code>meat</code>.</p>
+
+			<p>So what does that <code>.prototype</code> bit of code do?</p>
+			<p>Well every JavaScript function has a prototype property that is empty by default. Properties and methods can be attached to this prototype property in order to implement inheritance. In the above code, we're attaching <code>.display</code> to the prototype property of <code>classFood</code>.</p>
+
+			<img src="../imgs/fruit-js.jpg"/>
+
+			<p>In the above code, we've established a new function <code>classFruit</code> that has a <code>type</code> property ('Fruit') and a <code>name</code> property ('Orange'). Then in line 20, we set <code>classFruit</code> (the child) to inherit from <code>classFood</code> (the parent).</p>
+			<p>Line 22 creates a new instance of <code>classFruit</code>. Despite the fact that we've never explictly set a <code>display</code> function for <code>classFruit</code>, we can (as seen on line 23) use <code>display</code> to print the <code>type</code> property of 'apple'.</p>
+
+		</section> 
+		<footer>
+			<p>(c) Nicole L. Yee</p>
+		</footer>
+	</body>
+</html>

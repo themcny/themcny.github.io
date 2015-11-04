@@ -1,8 +1,8 @@
 .shelf {
-	/*position:relative;
-	top:300px;*/
+	/*border:1px solid black;*/
+}
+.flat {
 	margin-left: 20%;
-	/*margin-bottom: 300px;*/
 	background-image: url("../imgs/wood-shelf.jpg");
 	width: 800px;
 	height: 100px;
@@ -14,25 +14,35 @@
 	width: 800px;
 	height: 10px;
 	background-image: url("../imgs/wood-shelf.jpg");
-	margin-left: 18.5%;
+	margin-left: 18%;
+}
+.one, .two, .thr, .four {
+	padding-top: 2%;
 }
 .one {
 	position:relative;
 	left:26%;
 	margin-top: 1%;
+	transition: all .2s ease-in-out;
 }
 .two {
 	position:relative;
 	left:27%;
 	margin-top: 1%;
+	transition: all .2s ease-in-out;
 }
 .thr {
 	position:relative;
 	left:28%;
 	margin-top: 1%;
+	transition: all .2s ease-in-out;
 }
 .four {
 	position:relative;
 	left:29%;
 	margin-top: 1%;
+	transition: all .2s ease-in-out;
+}
+.one:hover, .two:hover, .thr:hover, .four:hover {
+	transform: scale(1.1, 1.1) translate(0px,-15px);
 }

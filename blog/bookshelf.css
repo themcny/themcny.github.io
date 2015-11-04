@@ -1,0 +1,33 @@
+.shelf {
+	/*position:relative;
+	top:300px;*/
+	margin-left: 20%;
+	/*margin-bottom: 300px;*/
+	background-image: url("../imgs/wood-shelf.jpg");
+	border: 1px solid black;
+	width: 800px;
+	height: 100px;
+	-webkit-transform: skew(-30deg);
+	   -moz-transform: skew(-30deg);
+	     -o-transform: skew(-30deg);
+}
+.one {
+	position:relative;
+	left:26%;
+	margin-top: 1%;
+}
+.two {
+	position:relative;
+	left:27%;
+	margin-top: 1%;
+}
+.thr {
+	position:relative;
+	left:28%;
+	margin-top: 1%;
+}
+.four {
+	position:relative;
+	left:29%;
+	margin-top: 1%;
+}

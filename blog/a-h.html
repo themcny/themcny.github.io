@@ -3,19 +3,32 @@
 	<head>
 		<meta charset= "utf-8">
 		<title>Nicole's Blog Post</title>
-		<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!--<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">-->
 		<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 	</head>
 
 	<body>
-		<header>
-			<nav>
-				Nicole's Blog				
-				<a href="../index.html">Homepage</a>
-				<a href="index.html">Blog Index</a>
-				<a href="../index.html">About Me</a>
-			</nav>
-		</header>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">Nicole's Notes</a>
+		    </div>
+		    <div>
+		      <ul class="nav navbar-nav">
+		        <li><a href="../index.html">Home Page</a></li>
+		        <li><a href="#">About Me</a></li>
+		        <li class="active"><a href="#">Blog Index</a></li>
+		        <li><a href="#">Most Recent Post</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
 
 		<section>
 			<h1>Arrays and Hashes<div id="date">9-30-2015</div></h1>

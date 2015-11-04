@@ -4,12 +4,17 @@
 	margin-left: 20%;
 	/*margin-bottom: 300px;*/
 	background-image: url("../imgs/wood-shelf.jpg");
-	border: 1px solid black;
 	width: 800px;
 	height: 100px;
 	-webkit-transform: skew(-30deg);
 	   -moz-transform: skew(-30deg);
 	     -o-transform: skew(-30deg);
+}
+.lip {
+	width: 800px;
+	height: 10px;
+	background-image: url("../imgs/wood-shelf.jpg");
+	margin-left: 18.5%;
 }
 .one {
 	position:relative;

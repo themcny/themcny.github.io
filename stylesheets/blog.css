@@ -4,8 +4,8 @@ html {
 
 body {
 	font-family: Verdana, sans-serif;
-	background-color: #FF99FF;
-	/*margin-top: 10%*/
+	background-image: url("../imgs/notepaper.jpg");
+	background-position: 0 35px;
 }
 
 .navbar {
@@ -24,6 +24,12 @@ section{
 	border:1px black;
 	margin:15px;padding:5px;
 	text-align: justify;
+}
+p {
+	line-height: 6;
+}
+#ex {
+	text-align: center;
 }
 footer {
   position: fixed;

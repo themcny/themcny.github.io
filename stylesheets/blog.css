@@ -18,21 +18,21 @@ body {
 	text-align: center;
 	background-color: #99FFFF;
 }
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  font-size: 1em;
-  /* Set the fixed height of the footer here */
-  height:2em;
-  background-color: #99FFFF;
-}
 section{
 	position:relative;
 	left:10%;top:2vh;width:60%;height:65vh;
 	border:1px black;
 	margin:15px;padding:5px;
 	text-align: justify;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 8px;
+  /* Set the fixed height of the footer here 
+  height:2em;
+  background-color: #99FFFF;*/
 }
 img { 
 	max-width: 100%;

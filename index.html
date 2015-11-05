@@ -4,24 +4,110 @@
 		<meta charset= "utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 		<title>Nicole L. Yee</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-		<link rel="stylesheet" type="text/css" href="stylesheets/mobile-default.css" media="handheld and (max-device-width:640px)"/>
+		
 	</head>
 	
-	<body>
-		<!--<a name="top">-->
-		<header>
-			<img src="imgs/header-background.JPG" alt="Sunset over Berkeley"/>
-			<nav>
-				Nicole L. Yee				
-				<a href="projects/index.html">Projects</a>
-				<a href="blog/index.html">My Blog</a>
-				<a href="#resume">Resume</a>
-				<a href="contact-info.html">Contact Me</a>
-				<a href="about.html">About Me</a>
-			</nav>
-		</header>
+	
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand" href="#">themcny</a>
+	    </div>
+	    <div>
+	      <div class="collapse navbar-collapse" id="myNavbar">
+	        <ul class="nav navbar-nav">
+	          <li><a href="#section1">About Me</a></li>
+	          <li><a href="#section2">Contact Me</a></li>
+	          <li><a href="#section3">Blog</a></li>
+	          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	              <li><a href="#section41">StickFighter</a></li>
+	              <li><a href="#section42">SQL Cheat Sheet</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	      </div>
+	    </div>
+	  </div>
+	</nav>    
+
+	<div id="section1" class="container-fluid">
+	  <h1>About Me</h1>
+	  <br>
+	  <img class="img-circle" src="imgs/snowbird.jpg"/>
+	  <br>
+	  <br>
+	  <p>I'm in the process of becoming a web developer.</p>
+	  <p>I have always loved building and fixing things. For a while, I thought that  Mechanical Engineering would be my calling. However, as I progressed through my education in engineering, I realized that the 'cool stuff' I wanted to work on wasn't Formula 1 Cars or spaceships. I wanted to create apps and websites that would facilitate efficiency in people's lives.</p>
+	  <p>In my spare time I enjoy playing the banjo and snowboarding.</p>
+	</div>
+	<div id="section3" class="container-fluid">
+	  <h1>Blog</h1>
+	  <br>
+	  <p>Check out my blog!</p>
+	  <br>
+	  <p><a href="blog/index.html"><img class="img-link" src="imgs/blog-screenshot.jpg"/></a><p>
+	  <br>
+	  <p></p>
+	</div>
+	<div id="section41" class="container-fluid">
+	  <h1>Project: StickFighter (WIP)</h1>
+	  <p>A description of the game should go here. A description of the game should go here. A description of the game should go here. A description of the game should go here.</p>
+	  <p><a href="projects/stick-fighter/game.html"><img class="img-link" src="imgs/stickfighter.jpg"/></a></p>
+	</div>
+	<div id="section42" class="container-fluid">
+	  <h1>Project: SQL Cheat Sheet (Complete)</h1>
+	  <p>A description of the game should go here. A description of the game should go here. A description of the game should go here. A description of the game should go here.</p>
+	  <p><a href="projects/SQL-cheat-sheet/sql-cheat.html"><img class="img-link" src="imgs/sql-cheat.jpg"/></a></p>
+	</div>
+	<div id="section2" class="container-fluid">
+	  <h1>Contact Me</h1>
+	  <br>
+	  <p>Phone: +1 (XXX) XXX-XXXX</p>
+		<p>Email: example@gmail.com</p>
+		<br>
+		<p>
+			<a href="https://twitter.com/themcny"><img src ="imgs/logo/twitter.png" alt="Twitter Logo"/></a>
+			<a href="https://www.facebook.com/theMCNY"><img src ="imgs/logo/facebook.png" alt="Facebook Logo"/></a>
+			<a href="https://www.linkedin.com"><img src ="imgs/logo/linkedin_logo.png" alt="Linkedin Logo"/></a>
+			<a href="https://github.com/themcny"><img src ="imgs/logo/github.png" alt="GitHub Logo"/></a>
+		</p>
+	</div>
+
+	</body>
+
+	<!--<body>
+
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">themcny</a>
+		    </div>
+		    <div>
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="../index.html">Home Page</a></li>
+		        <li><a href="#">About Me</a></li>
+		        <li><a href="#">Blog Index</a></li>
+		        <li><a href="#">Most Recent Post</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
 
 	<div class="content">		
 		
@@ -49,7 +135,7 @@
 			<a name="projects">
 			<h2>My Projects</h2>
 			<h3>Nicole as a web developer:</h3>
-			<!--<script src="try-alert.js"></script>-->
+			<script src="try-alert.js"></script>
 			<img src="imgs/ajax-loader.gif"/>
 			<div class="source">(c)<a href="www.ajaxload.info">ajaxload.info</a></div>
 			
@@ -95,5 +181,5 @@
 	<footer>
 		<em>(c) Nicole L. Yee</em>
 	</footer>
-	</body>
+	</body>-->
 </html>

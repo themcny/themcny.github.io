@@ -18,6 +18,13 @@ body {
 	text-align: center;
 	background-color: #99FFFF;
 }
+.progress{
+	border:1px solid black;
+	height: 30px;
+}
+.progress-bar {
+	background-color: green;
+}
 #section1 {
 	padding-top:50px;
 	height:500px;

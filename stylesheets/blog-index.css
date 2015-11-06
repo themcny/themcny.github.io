@@ -33,8 +33,9 @@ sept, oct, nov, dec{
 	padding-top: 2px;
 	padding-bottom: 2px;
 }
+/*
 .shelf {
-	/*border:1px solid black;*/
+	border:1px solid black;
 }
 .flat {
 	margin-left: 20%;
@@ -50,6 +51,16 @@ sept, oct, nov, dec{
 	height: 10px;
 	background-image: url("../imgs/wood-shelf.jpg");
 	margin-left: 18%;
+}
+*/
+.shelf {
+    margin-left:16%;
+    /*margin-top:10px;*/
+}
+polygon {
+    fill:#987456;
+    stroke:black;
+    stroke-width:1;
 }
 .one, .two, .thr, .four {
 	padding-top: 2%;
@@ -91,62 +102,3 @@ footer {
   height:2em;
   background-color: #99FFFF;
 }
-
-/*
-body{
-	font-family: Verdana, sans-serif;
-	font-size:5vh;
-	background-color: #282828;
-	height:100vh;
-	/*border:1px solid black;
-}
-header{
-	position:fixed;
-	left: 3vw; width: 85vw;
-	font-size: 7vh;
-	border:1px black;
-	margin:0 0 0 1.6vw;padding:3vh;
-	background-color:#282828;
-	color:#D0D0D0;
-	/*border:1px solid black;
-}
-details{
-	position:relative;
-	top:15vh;left: 5vw;
-	border:1px black;
-	margin:15px;padding:5px;padding-top:30px;
-	color:#e0e0e0;
-	/*border:1px solid black;
-}
-li{
-	font-size:3vh;
-	line-height: 150%;
-	color:#e0e0e0;
-}
-footer{
-	position:absolute;
-	bottom:0vh; left:3vw; width: 85vw;
-	border:1px black;
-	margin:15px;padding:5px;
-	font-size:2vh;
-	background-color: #282828;
-	color:#e0e0e0;
-}
-a:visited{
-	color:#909090;
-}
-a{
-	color:#E8e8e8;
-}
-a:hover{
-	color:#99ffff;
-}
-.bookcase{
-	transform: rotate(90deg);
-	transform-origin: left top 0;
-	text-transform: uppercase;
-	border:1px solid black;
-	box-shadow: 2px -2px 0px rgba(0, 0, 0, 0.1);
-	float:left;
-}
-*/

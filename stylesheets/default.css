@@ -98,9 +98,6 @@ body {
 .img-link:hover {
 	transform: scale(1.05, 1.05) /*translate(25px,10px)*/;
 }
-.mech {
-	width:75%;
-}
 .shelf {
 	position:relative;
 	top:62px;

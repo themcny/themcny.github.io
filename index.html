@@ -3,7 +3,7 @@
 	<head>
 		<meta charset= "utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-		<title>Nicole L. Yee</title>
+		<title>Nicole Yee</title>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<!-- jQuery library -->
@@ -34,13 +34,19 @@
 	        <ul class="nav navbar-nav">
 	          <li><a href="#section1">About Me</a></li>
 	          <li><a href="#section3">Blog</a></li>
-	          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+	          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Programming Projects<span class="caret"></span></a>
 	            <ul class="dropdown-menu">
 	              <li><a href="#section41">StickFighter</a></li>
 	              <li><a href="#section42">SQL Cheat Sheet</a></li>
 	            </ul>
 	          </li>
-	          <li><a href="#section2">Contact Me</a></li>
+	          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Mechanical Engineering Projects<span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	              <li><a href="#section51">1999 Ford Mustang GT</a></li>
+	              <li><a href="#section52">ECG Machine</a></li>
+	            </ul>
+	          </li>
+	          <li><a href="#section6">Contact Me</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -48,45 +54,96 @@
 	</nav>    
 
 	<div id="section1" class="container-fluid">
-	  <h1>About Me</h1>
-	  <br>
-	  <img class="img-circle" src="imgs/snowbird.jpg"/>
-	  <br>
-	  <br>
-	  <p>Nicole, the web developer is loading:</p>
-	  <div class="progress">
-		  <div class="progress-bar" role="progressbar" aria-valuenow="63"
-		  aria-valuemin="0" aria-valuemax="126" style="width:50%">
-		    <span id="percent">50% Complete</span>
-		  </div>
-	  </div>
-	  <p>I have always loved building and fixing things. For a while, I thought that  Mechanical Engineering would be my calling. However, as I progressed through my education in engineering, I realized that the 'cool stuff' I wanted to work on wasn't Formula 1 Cars or spaceships. I wanted to create apps and websites that would facilitate efficiency in people's lives.</p>
-	  <p>In my spare time I enjoy playing the banjo and snowboarding.</p>	  
+		<div class="transbox">
+			<h1>About Me</h1>
+			<br>
+			<img class="img-circle" src="imgs/snowbird.jpg"/>
+			<br>
+			<br>
+			<p>Nicole, the web developer is loading:</p>
+			<div class="progress">
+			  <div class="progress-bar" role="progressbar" aria-valuenow="63"
+			  aria-valuemin="0" aria-valuemax="126" style="width:50%">
+			    <span id="percent">50% Complete</span>
+			  </div>
+			</div>
+			<p>I have always loved building and fixing things. For a while, I thought that  Mechanical Engineering would be my calling. However, as I progressed through my education in engineering, I realized that the 'cool stuff' I wanted to work on wasn't Formula 1 Cars or spaceships. I wanted to create apps and websites that would facilitate efficiency in people's lives.</p>
+			<p>In my spare time I enjoy playing the banjo and snowboarding.</p>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>	  
 	</div>
 	<div id="section3" class="container-fluid">
-	  <h1>Blog</h1>
-	  <br>
-	  <p>Check out my blog!</p>
-	  <br>
-	  <p><a href="blog/index.html"><img class="img-link" src="imgs/blog-screenshot.jpg"/></a><p>
-	  <br>
-	  <p></p>
+		<div class="transbox">
+			<h1>Blog</h1>
+			<br>
+			<div id="bookshelf">
+				<div id="sept">
+					<a href="blog/t1-git-blog.html"><img class="one" src="blog/title-imgs/version-control.jpg"/></a>
+					<a href="blog/css-concepts.html"><img class="two" src="blog/title-imgs/margin-borders-padding.jpg"/></a>
+					<a href="blog/arrays-hashes.html"><img class="thr" src="blog/title-imgs/online-security.jpg"/></a>
+					<a href="blog/tech-issues.html"><img class="four" src="blog/title-imgs/arrays-hashes.jpg"/></a>
+				</div>
+				<div class="shelf">
+					<svg height="30" width="900">
+					    <polygon points="400,25 0,25 43,0 443,0 400,25 400,30 0,30 0,25"/>
+					</svg>
+				</div>
+
+				<div id="oct">
+					<a href="blog/enumerable-methods.html"><img class="one" src="blog/title-imgs/enumerable-cycle.jpg"/></a>
+					<a href="blog/ruby-classes.html"><img class="two" src="blog/title-imgs/ruby.jpg"/></a>
+					<a href="blog/JavaScript.html"><img class="thr" src="blog/title-imgs/loops.jpg"/></a>
+					<a href="blog/tech-issues.html"><img class="four" src="blog/title-imgs/recursion.jpg"/></a>
+				</div>
+				<div class="shelf">
+					<svg height="30" width="900">
+					    <polygon points="400,25 0,25 43,0 443,0 400,25 400,30 0,30 0,25"/>
+					</svg>
+				</div>
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
 	</div>
 	<div id="section41" class="container-fluid">
-	  <h1>Project: StickFighter (WIP)</h1>
-	  <p>A description of the game should go here. A description of the game should go here. A description of the game should go here. A description of the game should go here.</p>
-	  <p><a href="projects/stick-fighter/game.html"><img class="img-link" src="imgs/stickfighter.jpg"/></a></p>
+		<div class="transbox">
+			<h1>Project: StickFighter (WIP)</h1>
+			<p>A description of the game should go here. A description of the game should go here. A description of the game should go here. A description of the game should go here.</p>
+			<p><a href="projects/stick-fighter/game.html"><img class="img-link" src="imgs/stickfighter.jpg"/></a></p>
+		</div>
 	</div>
 	<div id="section42" class="container-fluid">
-	  <h1>Project: SQL Cheat Sheet (Complete)</h1>
-	  <p>A description of the game should go here. A description of the game should go here. A description of the game should go here. A description of the game should go here.</p>
-	  <p><a href="projects/SQL-cheat-sheet/sql-cheat.html"><img class="img-link" src="imgs/sql-cheat.jpg"/></a></p>
+		<div class="transbox">
+		  <h1>Project: SQL Cheat Sheet (Complete)</h1>
+		  <p>A description of the game should go here. A description of the game should go here. A description of the game should go here. A description of the game should go here.</p>
+		  <p><a href="projects/SQL-cheat-sheet/sql-cheat.html"><img class="img-link" src="imgs/sql-cheat.jpg"/></a></p>
+		</div>
 	</div>
-	<div id="section2" class="container-fluid">
+	<div id="section51" class="container-fluid">
+		<div class="transbox">
+			<h1>Project: 1999 Ford Mustang GT</h1>
+			<p>Modified air intake system. Rewired starting system. More descriptions about what I did.More descriptions about what I did.More descriptions about what I did.More descriptions about what I did.</p>
+			<p><a href="#"><img class="mech" src="imgs/ford-mustang.jpg"/></a></p>
+		</div>
+	</div>
+	<div id="section52" class="container-fluid">
+		<div class="transbox">
+		  <h1>Project: ECG Machine (Complete)</h1>
+		  <p>ECG a.k.a electocardiogram machine records the electrical activity of the heart. Electrodes are put on the skin of the chest and it measures the electrical activity happening all over the heart.</p>
+		  <p><a href="#"><img class="mech2" src="imgs/ecg.jpg"/></a></p>
+		  <p>(This picture is a place holder picture from Medgadget while I take pictures of my own.)</p>
+		</div>
+	</div>
+	<div id="section6" class="container-fluid">
 	  <h1>Contact Me</h1>
 	  <br>
 	  <p>Phone: +1 (XXX) XXX-XXXX</p>
-		<p>Email: example@gmail.com</p>
+		<p>Email: n.lindsey.yee@gmail.com</p>
 		<br>
 		<p>
 			<a href="https://twitter.com/themcny"><img src ="imgs/logo/twitter.png" alt="Twitter Logo"/></a>
@@ -95,98 +152,8 @@
 			<a href="https://github.com/themcny"><img src ="imgs/logo/github.png" alt="GitHub Logo"/></a>
 		</p>
 	</div>
-
-	</body>
-
-	<!--<body>
-
-		<nav class="navbar navbar-default">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <a class="navbar-brand" href="#">themcny</a>
-		    </div>
-		    <div>
-		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="../index.html">Home Page</a></li>
-		        <li><a href="#">About Me</a></li>
-		        <li><a href="#">Blog Index</a></li>
-		        <li><a href="#">Most Recent Post</a></li>
-		      </ul>
-		    </div>
-		  </div>
-		</nav>
-
-	<div class="content">		
-		
-		<div class="sidebar">
-			<img src="imgs/profile-picture-resized.jpg" alt="Profile Picture"/>
-			
-			<p><a href="https://twitter.com/themcny">Twitter</a></p>
-			<p><a href="https://www.facebook.com/theMCNY">Facebook</a></p>
-			<p><a href="https://www.linkedin.com">Linkedin</a></p>
-			<p><a href="https://github.com/themcny">GitHub</a></p>
-
-		</div> 
-		
-		<div class="info">
-			<a name="about-me">
-			<h1>About Me</h1>
-			<section>I'm in the process of becoming a web developer.</section>
-			<p>I have always loved building and fixing things. For a while, I thought that  Mechanical Engineering would be my calling. However, as I progressed through my education in engineering, I realized that the 'cool stuff' I wanted to work on wasn't Formula 1 Cars or spaceships. I wanted to create apps and websites that would facilitate efficiency in people's lives.</p>
-			<p>In my spare time I enjoy playing the banjo and snowboarding.</p>
-			<section><em>More information to be added soon.</em></section>
-			<br>
-			<a href="#top">Back to the Top</a>
-			<hr>
-
-			<a name="projects">
-			<h2>My Projects</h2>
-			<h3>Nicole as a web developer:</h3>
-			<script src="try-alert.js"></script>
-			<img src="imgs/ajax-loader.gif"/>
-			<div class="source">(c)<a href="www.ajaxload.info">ajaxload.info</a></div>
-			
-			<h3>Nicole as a Mechanical Engineer:</h3>
-			<br>
-			<h5>A Candlestick</h5>
-			<img src="imgs/candlestick.jpg"/>
-			<div class="source">(c) Nicole L. Yee</div>
-			<br>
-			<h5>A Paperclip</h5>
-			<img src="imgs/Paperclip.jpg"/>
-			<div class="source">(c) Nicole L. Yee</div>
-			<br>
-			<h5>A Coke Bottle Mold</h5>
-			<img src="imgs/Mold_Coke_Bottle.jpg"/>
-			<div class="source">(c) Nicole L. Yee</div>
-			<br>
-			<h5>A Klein Bottle</h5>
-			<img src="imgs/Klein-Bottle.jpg"/>
-			<div class="source">(c) Nicole L. Yee</div>
-			<br>
-			<a href="#top">Back to the Top</a>
-
-			<hr>
-			<a name="resume">
-			<h2>Resume</h2>
-			<a href="#top">Back to the Top</a>
-			<br>
-
-			<hr>
-			<a name="contact-me">
-			<h2>Contact Me</h2>
-			<section>
-				<p>Phone: +1 (510) 982-1720</p>
-				<p>Email: n.lindsey.yee@gmail.com</p>
-				<p>I am currently based out of San Francisco.</p>
-			</section>
-			<a href="#top">Back to the Top</a>
-			<br>
-			<hr>
-		</div>
-	</div>
 	<footer>
 		<em>(c) Nicole L. Yee</em>
 	</footer>
-	</body>-->
+	</body>
 </html>

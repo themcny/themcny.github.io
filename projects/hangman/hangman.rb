@@ -35,9 +35,7 @@ class Hangman
 	end
 
 	def wrong_guesses
-		if !include?
-			@count += 1
-		end
+		@count += 1
 	end
 
 	def stick_fig
@@ -50,16 +48,20 @@ class Hangman
 	end
 
 	def lose?
-		if @count > 6
+		if @count > 10
 			puts "You have lost Hangman!"
 			puts "The correct word was #{@answer}"
+			return true
 		end
+		false
 	end
 
 	def win?
 		if !@blanks_array.include?("_")
 			puts "You Win!"
+			return true
 		end
+		false
 	end
 
 	def good_guess
@@ -82,23 +84,3 @@ class Hangman
 	end
 
 end
-
-# Figure out how to deal with wrong guesses
-
-game = Hangman.new('bananas')
-
-p "Guess a letter:"
-p game.guess
-p game.update
-p game.guess
-p game.update
-p game.guess
-p game.update
-p game.guess
-p game.update
-p game.guess
-p game.update
-p game.guess
-p game.update
-p game.guess
-p game.update

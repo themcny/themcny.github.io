@@ -108,57 +108,63 @@ function damage(health,htmlid,damage) {
 
 // recognizing the arrow key presses
 document.onkeydown = function(e) {
-    switch (e.keyCode) {
-        case 37:
-            //alert('left');
-           	//hero = document.getElementById('hero');
-            //hero.style.left = (hero.style.left.replace('px','')*1)-5;
-            addAclass('hero', 'walkleft');
-            setInterval(function() { removeAclass('hero', 'walkleft'); }, 1500);
-            //var pos = $("#hero").position();
-        	//$("#hero").css('left',pos.left - offset);
-            break;
-        case 38:
-            //alert('up');
-            break;
-        case 39:
-            //alert('right');
-          	//hero = document.getElementById('hero');
-            //hero.style.left = (hero.style.left.replace('px','')*1)+5;
-            addAclass('hero', 'walkright');
-            setInterval(function() { removeAclass('hero', 'walkright'); }, 1500);
-            //var pos = $("#hero").position();
-        	//$("#hero").css('left', pos.left + offset);
-            break;
-        case 40:
-        	//alert('down');
-        	break;
-        case 17:
-        	addAclass('hero', 'kick');
-        	setInterval(function() { removeAclass('hero', 'kick'); }, 1500);
-        	kick(hero, punchingBag);
-        	damage(punchingBag.health, 'healthEnemy', hero.damage.foot);
-        	addAclass('punchingBag','swing');
-        	setInterval(function() { removeAclass('punchingBag', 'swing'); }, 1500);
-        	break;
-    	case 18:
-    		addAclass('hero', 'punch');
-			setInterval(function() { removeAclass('hero', 'punch'); }, 1500);
-    		punch(hero, punchingBag);
-    		damage(punchingBag.health, 'healthEnemy', hero.damage.hand);
-    		addAclass('punchingBag','swing');
-        	setInterval(function() { removeAclass('punchingBag', 'swing'); }, 1500);
-    		break;
+  switch (e.keyCode) {
+    case 37:
+      //alert('left');
+     	//hero = document.getElementById('hero');
+      //hero.style.left = (hero.style.left.replace('px','')*1)-5;
+      addAclass('hero', 'walkleft');
+      setInterval(
+      	function() { 
+        	removeAclass('hero', 'walkleft'); 
+        }, 1500);
+      //var pos = $("#hero").position();
+  		//$("#hero").css('left',pos.left - offset);
+      break;
+    case 38:
+      //alert('up');
+      break;
+    case 39:
+      //alert('right');
+    	//hero = document.getElementById('hero');
+      //hero.style.left = (hero.style.left.replace('px','')*1)+5;
+      addAclass('hero', 'walkright');
+      setInterval(
+      	function() { 
+      		removeAclass('hero', 'walkright'); 
+      	}, 1500);
+      //var pos = $("#hero").position();
+    	//$("#hero").css('left', pos.left + offset);
+      break;
+    case 40:
+    	//alert('down');
+    	break;
+    case 17:
+    	addAclass('hero', 'kick');
+    		setInterval(function() { removeAclass('hero', 'kick'); }, 1500);
+    	kick(hero, punchingBag);
+    	damage(punchingBag.health, 'healthEnemy', hero.damage.foot);
+    	addAclass('punchingBag','swing');
+    		setInterval(function() { removeAclass('punchingBag', 'swing'); }, 1500);
+    	break;
+  	case 18:
+  		addAclass('hero', 'punch');
+				setInterval(function() { removeAclass('hero', 'punch'); }, 1500);
+  		punch(hero, punchingBag);
+  		damage(punchingBag.health, 'healthEnemy', hero.damage.hand);
+  		addAclass('punchingBag','swing');
+      	setInterval(function() { removeAclass('punchingBag', 'swing'); }, 1500);
+  		break;
 		case 90:
 			//alert('z');
 			addAclass('hero', 'sword');
-			setInterval(function() { removeAclass('hero', 'sword'); }, 1500);
+				setInterval(function() { removeAclass('hero', 'sword'); }, 1500);
 			weapon(hero, punchingBag);
 			damage(punchingBag.health, 'healthEnemy', hero.damage.hand);
 			addAclass('punchingBag','swing');
-        	setInterval(function() { removeAclass('punchingBag', 'swing'); }, 1500);
+        setInterval(function() { removeAclass('punchingBag', 'swing'); }, 1500);
 			break;
-    }
+		}
 };
 
 /*

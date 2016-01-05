@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Maintainable JavaScript</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="default.css">
+
+</head>
+<body>
+  <div class="container">
+  <div class="jumbotron">
+    <h1>Maintainable JavaScript</h1>
+    <p>by Peter, Jeremy, and Nicole</p> 
+  </div>
+  <div class="vertical-break"></div>
+  <div class="text-info">
+    <h3>Why Use a Framework?</h3>
+    <ul>
+      <li>asynchronous page load</li>
+      <li>code management with JQuery sucks</li>
+      <li>help with well-defined application architecture</li>
+      <li>responsive UI</li>
+      <li>well-structured and maintainable code</li>
+    </ul>
+  </div>
+  <div class="vertical-break"></div>
+  <div class="list-group">
+    <h3 class="list-group-item">Important Terms</h3>
+    <a href="http://emberjs.com" class="list-group-item">2-way data binding</a>
+    <a href="#" class="list-group-item">Dependency Injection</a>
+    <a href="#" class="list-group-item">Routing</a>
+    <a href="#" class="list-group-item">Templates</a>
+    <a href="#" class="list-group-item">Boilerplate (code)</a>
+    <a href="#" class="list-group-item">Server-Side Rendering</a>
+    <a href="#" class="list-group-item">String-based templates/DOM-based templates</a>
+  </div>
+  <div class="vertical-break"></div>  
+  <div class="row">
+    <div class="col-sm-3">
+      <h3><a href="http://jsfiddle.net/xte4vvzv/1/">Angular JS</a></h3>
+      <ol>
+        <li>Size: 36kB</li>
+        <li>2 way data binding</li>
+        <li>Declarative DOM-based View Template</li>
+        <li>Reusable components aka directives</li>
+        <li>Clear routing</li>
+        <li>Can create custom DOM elements</li>
+        <li>Has it's own concepts - e.g. scopes, directives, transclusion</li>
+        <li>No server side rendering</li>
+        <li>Transitioning from 1.0 to 2.0</li>
+      </ol>
+    </div>
+    <div class="col-sm-3">
+      <h3><a href="#">Backbone JS</a></h3>
+      <ol>
+        <li>Size: 6.3kB</li>
+        <li>No 2 way data binding</li>
+        <li>String-based View Template: <small> usually underscore.js or handlebars.js</small></li>
+        <li>Use a mixin system for code reuse</li>
+        <li>Views manipulate the DOM directly</li>
+        <li>No server side rendering</li>
+        <li>Barebones, allowed to mix and match to optimize functionality</li>
+        <li>Can be used for only parts of the page</li>
+      </ol>    
+    </div>
+    <div class="col-sm-3">
+      <h3><a href="http://jsfiddle.net/xsko5kwj/">React JS</a></h3> 
+      <ol>
+        <li>Size: 120kB</li>
+        <li>Unidirectional data flow</li>
+        <li>No routing</li>
+        <li>Use a mixin system for code reuse</li>
+        <li>Very fast</li>
+        <li>Easy to learn</li>
+        <li>Can be used to create mobile apps</li>
+        <li>supports server side rendering</li>
+        <li>Takes care of the V in MVC</li>
+        <li>No templates, components generate the UI so HTML lives in the JS</li>
+      </ol>
+    </div>
+    <div class="col-sm-3">
+      <h3><a href="http://jsfiddle.net/rubfkb1o/">Ember JS</a></h3> 
+      <ol>
+        <li>Size: 95kB</li>
+        <li>2 way data binding</li>
+        <li>String-based view template - handlebars.js</li>
+        <li>Reusable components at the view level but not supported at controller level</li>
+        <li>Slick routing</li>
+        <li>JQuery and Handlebars are required dependencies</li>
+        <li>Everything is built in - like rails convention over config</li>
+        <li>Templating library, routing, etc. included</li>
+        <li>More of a complete solution</li>
+        <li>Steep learning curve because there's so much included</li>
+        <li>No server side rendering</li>
+        <li>Controls the entire page</li>
+        <li>Sucks to set up with Rails</li>
+      </ol>
+    </div>
+  </div>
+  <div class="vertical-break"></div>
+  <br>
+  <div class="col-md-12">
+    <label>Comparing Trends of Ember, Backbone, React, and Angular:</label>
+    <img src="imgs/ember-backbone-react-angular.jpg">
+    <br>
+    <hr>
+  </div>
+  <div class="col-md-12">
+    <label>Without Angular - Comparing Trends of Ember, Backbone, and React:</label>
+    <img src="imgs/ember-backbone-react.jpg">
+    <hr>
+  </div>
+  <div class="col-md-12">
+    <h4>Further Reading:</h4>
+    <ol>
+      <li><a href="https://timkadlec.com/2015/02/client-side-templatings-major-bug/">Client Side vs. Service Side</a></li>
+      <li><a href="http://www.theserverside.com/news/1321158/A-beginners-guide-to-Dependency-Injection">What the fuck is Dependency Injection?</a></li>
+      <li><a href="http://www.developereconomics.com/feature-comparison-of-4-popular-js-mv-frameworks/">Syntax Differences</a></li>
+    </ol>
+
+  </div>
+  </div>
+</body>
+</html>
+
+

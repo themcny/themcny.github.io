@@ -2,6 +2,7 @@
 
 When properties in the model are updated the view/UI is updated immediately
 When the view/UI is updated the model is changed too.
+A benefit is that there's a reduction in the amount of code required to create dynamic views
 
 
 Dependency Injection - 

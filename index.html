@@ -42,19 +42,40 @@
        <div id="tab-content1" class="tab-content">
           <h3>About</h3>
           <p>Nicole is a full stack web developer based in San Francisco. Before deciding to try her hand at web dev, she dabbled in Mechanical Engineering. When she's not coding or CAD-ing at the computer, she can be found in the mountains either snowboarding, hiking, or playing her banjo in front of a campfire.</p>
-          <p></p>
+          <p>
+            <a href="https://twitter.com/themcny"><img src ="imgs/logo/twitter.png" alt="Twitter Logo"/></a>
+            <a href="https://www.facebook.com/theMCNY"><img src ="imgs/logo/facebook.png" alt="Facebook Logo"/></a>
+            <a href="https://www.linkedin.com"><img src ="imgs/logo/linkedin_logo.png" alt="Linkedin Logo"/></a>
+            <a href="https://github.com/themcny"><img src ="imgs/logo/github.png" alt="GitHub Logo"/></a>
+          </p>
        </div> <!-- #tab-content1 -->
+
        <div id="tab-content2" class="tab-content">
           <h3>Blog</h3>
           <p>Latest Posts:</p>
-          <p><span class="blog-posts"><a href="/blog/inheritance.html">Inheritance</a></span></p>
-          <p><span class="blog-posts"><a href="/blog/tech.html">Recursion And Fractals</a></span></p>
-          <p><span class="blog-posts"><a href="/blog/JavaScript.html">Loops in JS vs. Loops in Ruby</a></span></p>
+          <div class="blog-posts">
+            <img class="blog-post" src="imgs/inheritance.png">
+            <h4><a href="/blog/inheritance.html">Inheritance</a></h4>
+            <p>Inheritance refers to a relationship between two classes. Ruby is a language that doesn't support multiple inheritance (a feature that allows classes to inherit 'stuff' from multiple classes). A class can inherit from a different class that in turn inherits from a third class, but a single class cannot inherit directly from many different classes. The class that is higher up on the hierarchy (the one who's features are being inherited) is called a super-class or a parent class. The class that is lower on the hierarchy (the classes doing the inheritance) is called the subclass or a child class.<a href="/blog/inheritance.html">(Read More)</a></p>
+          </div>
+
+          <div class="blog-posts">
+              <img class="blog-post" src="imgs/fractal.png">
+              <h4><a href="/blog/tech.html">Recursion And Fractals</a></h4>
+              <p>A recursive function is one that calls itself within the function. A fractal is a mathematical set or a natural phenomenon that shows a repeating pattern that happens at successively smaller scales. More simply put, a fractal is a never-ending pattern. Not only can we write some complicated functions with recursion (and with fewer lines), we can also use recursion draw fractals. <a href="/blog/tech.html">(Read More)</a></p>
+          </div>
+
+          <div class="blog-posts">
+            <img class="blog-post" src="imgs/loop.png">
+            <h4><a href="/blog/JavaScript.html">Loops in JS vs. Loops in Ruby</a></h4>
+            <p>Let's compare for loops in Ruby and JavaScript. To review, in Ruby, a for loop's counter variable does not need to be declared before it is used in the for loop. In JavaScript, a for loop looks a little bit different. In the first line of the loop, we have to declare a variable counter, set it's initial value, and then set the condition for which the loop should run as long as that condition is 'true'. Lastly, we establish how the counter value should increment or decrement. <a href="/blog/JavaScript.html">(Read More)</a></p>
+          </div>
        </div> <!-- #tab-content2 -->
+
        <div id="tab-content3" class="tab-content">
           <h3>Projects:</h3>
           <div class="project">
-            <img id="whatzcookin" src="imgs/whatzcookin-small.png">
+            <img class="project-img" src="imgs/whatzcookin-small.png">
             <div id="whatzcookin-text">
               <p>WhatzCookin is a mobile-responsive web app that takes an ingredient and returns a recipe suggestion based on a user’s preferences. WhatzCookin utilizes a taste algorithm based on the flavors (sweet, spicy, bitter, etc.) of a user's favorited and rated recipes to create a user's taste profile. Using this taste profile, the app suggests a cuisine style (e.g. Italian or Japanese) that user veers towards.</p> 
               <p>WhatCookin utilizes the Spoonacular API for its data and was built using Ruby on Rails and JavaScript.</p>
@@ -63,7 +84,7 @@
           </div>
 
           <div class="project">
-            <img id="shoppingcart" src="imgs/shoppingcart-small.png">
+            <img class="project-img" src="imgs/shoppingcart-small.png">
             <div id="shoppingcart-text">
               <p>Rails Online Shop is an online shop built with Ruby on Rails. A user can login and shop by placing items in their cart. Some key features include the ability to filter shop items based on their location or status. There is also an entirely separate admin dashboard for the 'shop owner' to access and update at will.</p>
 
@@ -72,7 +93,7 @@
           </div>
 
           <div class="project">
-            <img id='snowflake' src="imgs/snowflake-small.png">
+            <img class="project-img" src="imgs/snowflake-small.png">
             <div id="snowflake-text">
               <p>Snow Days is a web app built with Sinatra. A user logs in and favorites ski resorts they love. When that resort gets a new dusting of snow, the user is alerted via text message. Snow Days utilizes the Weather Underground API, Twillio API, and Google OAuth.</p>
 

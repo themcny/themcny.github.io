@@ -2,11 +2,15 @@
     background-color: black;
 }*/
 
-img {
+.project-img {
     margin-right:25px;
     margin-top:35px;
     margin-bottom: 35px;
     float:left;
+}
+
+.blog-post {
+    width:300px;
 }
 
 .project {

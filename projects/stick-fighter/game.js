@@ -166,37 +166,3 @@ document.onkeydown = function(e) {
 			break;
 		}
 };
-
-/*
-Reflection
-
-What was the most difficult part of this challenge?
-
-Keeping it small. I also wanted to get the animation to move across the screen but without
-JQuery, it got to be too hard. I think staying focused on the functions that I did make
-was important. Also drawing the images was difficult for me as I'm not artistic in that way.
-
-
-What did you learn about creating objects and functions that interact with one another?
-
-I learned that it is important to keep all my names straight and be careful that I spell
-it properly. Additionally, I got better at creating multiple functions that interact with
-each other.
-
-
-Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
-
-Not for this one. I did learn that I would like to be able to use JQuery. It would have
-saved me a lot of headached when adding and removing classes.
-
-
-How can you access and manipulate properties of objects?
-
-Using the dot syntax or the square brackets syntax. E.g. either object.property or 
-object["property"] would acces the properties of the objects. Then they can be manipulated
-like variables (basic arithmetic).
-
-
-
-
-*/

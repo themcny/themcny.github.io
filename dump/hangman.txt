@@ -1,5 +1,0 @@
-1. Computer chooses the word that is the answer
-2. Player inputs first letter guess
-3. Is the letter in the answer
-	 Yes? => Replace the blanks with the letters and the user guesses again (when there are no more blanks the game is over)
-	 No? => A 'life' is taken (begin with 6 lives, if lives reaches 0, the game is over)

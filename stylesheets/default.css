@@ -1,7 +1,4 @@
 body {
-  background-image: url("../imgs/20161231-DSC_0027.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 2em;
   padding-left: 5vw;
   padding-bottom: 5vw;
@@ -16,14 +13,16 @@ body {
 .introduction {
   font-size: 8em;
   padding-bottom: .5em;
-  color: #8e8e8e;
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: black;
+  /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 
 .overview-list-item {
   font-size: 4em;
-  color: #ececec;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: black;
+  /* text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
 }
 
 .project-timeline {

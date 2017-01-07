@@ -12,89 +12,88 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="stylesheets/default.css">
-    <script src="scripts/smooth-scroll.js" type="text/javascript"></script>
-    <script src="scripts/toggle-picture.js" type="text/javascript"></script>
   </head>
 
-
   <body>
+    <div class="overview">
+      <div class="introduction">Nicole Yee is:</div>
+      <div class="overview-list-item">a developer at <a href="https://www.roostify.com/">Roostify</a></div>
+      <div class="overview-list-item">a contributing developer to <a href="http://www.pillowfort.io/">Pillowfort</a></div>
+      <div class="overview-list-item">an avid snowboarder</div>
+      <div class="overview-list-item">and a mandolin player</div>
+      <div class="overview-list-item">based out of San Francisco.</div>
 
-    <div class="tabs">
+      <div id="timeline-button" class="overview-list-item">I have always loved fixing and building things.</div>
+    </div>
 
-       <!-- Radio button and lable for #tab-content1 -->
-       <input type="radio" name="tabs" id="tab1" checked >
-       <label for="tab1">
-           <i class="fa fa-html5"></i><span>About</span>
-       </label>
+    <div class="media-links">
+      <a href="https://www.linkedin.com"><img src ="imgs/logo/linkedin_logo.png" alt="Linkedin Logo"/></a>
+      <a href="https://github.com/themcny"><img src ="imgs/logo/github.png" alt="GitHub Logo"/></a>
+    </div>
 
-       <!-- Radio button and lable for #tab-content2 -->
-       <input type="radio" name="tabs" id="tab2">
-       <label for="tab2">
-           <i class="fa fa-css3"></i><span>Blog</span>
-       </label>
+    <div class="project-timeline">
+      <div class="project">
+        <img class="project-img" src="">
+        <div id="phone-text">
+          <p>Took apart family telephone. Could not put it back together.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project-img" src="">
+        <div id="nerf-text">
+          <p>Removing air restrictors on nerf guns to improve nerf gun range.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project-img" src="">
+        <div id="bass-text">
+          <p>Re-sautering loose wires in electric bass guitar</p>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project-img" src="">
+        <div id="engine-transmission-text">
+          <p>Rebuilt Kia engine and automatic transmission.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img class="project-img" src="imgs/whatzcookin-small.png">
+        <div id="whatzcookin-text">
+          <p>WhatzCookin is a mobile-responsive web app that takes an ingredient and returns a recipe suggestion based on a user’s preferences. WhatzCookin utilizes a taste algorithm based on the flavors (sweet, spicy, bitter, etc.) of a user's favorited and rated recipes to create a user's taste profile. Using this taste profile, the app suggests a cuisine style (e.g. Italian or Japanese) that user veers towards.</p> 
+          <p>WhatCookin utilizes the Spoonacular API for its data and was built using Ruby on Rails and JavaScript.</p>
+          <p><a href="https://whatzcookin-dev.herokuapp.com">(Live Site)</a> | <a href="https://github.com/themcny/whatzcookin-rails">(Github Repo)</a></p>
+        </div>
+      </div>
 
-       <!-- Radio button and lable for #tab-content3 -->
-       <input type="radio" name="tabs" id="tab3">
-       <label for="tab3">
-           <i class="fa fa-code"></i><span>Projects</span>
-       </label>
+      <div class="project">
+        <img class="projet-img" src="">
+        <div id="bombermath-text">
+          <p>Bomber Math is a multiplication table game where you face off against an opponent to see who can answer a set of randomly generated problems quickest. The project was a top 100 finisher for the Hack Summit 2016 hackathon. It is built using Node.js, Express.js, and socket.io to create a quick, responsive web app that handles multiple simultaneous players.</p>
 
-       <div id="tab-content1" class="tab-content">
-          <h3>About</h3>
-          <p>Nicole is a web developer based in San Francisco. Before deciding to try her hand at web dev, she dabbled in Mechanical Engineering. When she's not coding or CAD-ing at the computer, she can be found in the mountains either snowboarding, hiking, or playing her banjo in front of a campfire.</p>
-          <br>
-          <p>
-            <a href="https://www.linkedin.com"><img src ="imgs/logo/linkedin_logo.png" alt="Linkedin Logo"/></a>
-            <a href="https://github.com/themcny"><img src ="imgs/logo/github.png" alt="GitHub Logo"/></a>
-          </p>
-       </div> <!-- #tab-1 -->
+          <p><a href="https://bomber-math.herokuapp.com/">(Live Site)</a> | <a href="https://github.com/themcny/bomber-math">(Github Repo</a></p>
+        </div>
+      </div>
 
-       <div id="tab-content2" class="tab-content">
-          <h3>Work:</h3>
-          <p></p>
-       </div> <!-- #tab-2 -->
+      <div class="project">
+        <img class="project-img" src="imgs/shoppingcart-small.png">
+        <div id="shoppingcart-text">
+          <p>Rails Online Shop is an online shop built with Ruby on Rails. A user can login and shop by placing items in their cart. Some key features include the ability to filter shop items based on their location or status. There is also an entirely separate admin dashboard for the 'shop owner' to access and update at will.</p>
 
-       <div id="tab-content3" class="tab-content">
-          <h3>Projects:</h3>
-          <div class="project">
-            <img class="project-img" src="imgs/whatzcookin-small.png">
-            <div id="whatzcookin-text">
-              <p>WhatzCookin is a mobile-responsive web app that takes an ingredient and returns a recipe suggestion based on a user’s preferences. WhatzCookin utilizes a taste algorithm based on the flavors (sweet, spicy, bitter, etc.) of a user's favorited and rated recipes to create a user's taste profile. Using this taste profile, the app suggests a cuisine style (e.g. Italian or Japanese) that user veers towards.</p> 
-              <p>WhatCookin utilizes the Spoonacular API for its data and was built using Ruby on Rails and JavaScript.</p>
-              <p><a href="https://whatzcookin-dev.herokuapp.com">(Live Site)</a> | <a href="https://github.com/themcny/whatzcookin-rails">(Github Repo)</a></p>
-            </div>
-          </div>
+          <p><a href="https://rails-online-shop-paul-nicole.herokuapp.com">(Live Site)</a> | <a href="https://github.com/themcny/rails-online-shop-app">(Github Repo)</a></p>
+        </div>
+      </div>
 
-          <div class="project">
-            <img class="projet-img" src="">
-            <div id="bombermath-text">
-            <p>Bomber Math is a multiplication table game where you face off against an opponent to see who can answer a set of randomly generated problems quickest. The project was a top 100 finisher for the Hack Summit 2016 hackathon. It is built using Node.js, Express.js, and socket.io to create a quick, responsive web app that handles multiple simultaneous players.</p>
+      <div class="project">
+        <img class="project-img" src="imgs/snowflake-small.png">
+        <div id="snowflake-text">
+          <p>Snow Days is a web app built with Sinatra. A user logs in and favorites ski resorts they love. When that resort gets a new dusting of snow, the user is alerted via text message. Snow Days utilizes the Weather Underground API, Twillio API, and Google OAuth.</p>
 
-            <p><a href="https://bomber-math.herokuapp.com/">(Live Site)</a> | <a href="https://github.com/themcny/bomber-math">(Github Repo</a></p>
-            </div>
-          </div>
+          <p><a href="http://snow-days.herokuapp.com/">(Live Site)</a> | <a href="https://github.com/themcny/snow-days">(Github Repo)</a></p>
+        </div>
+      </div>
 
-          <div class="project">
-            <img class="project-img" src="imgs/shoppingcart-small.png">
-            <div id="shoppingcart-text">
-              <p>Rails Online Shop is an online shop built with Ruby on Rails. A user can login and shop by placing items in their cart. Some key features include the ability to filter shop items based on their location or status. There is also an entirely separate admin dashboard for the 'shop owner' to access and update at will.</p>
-
-              <p><a href="https://rails-online-shop-paul-nicole.herokuapp.com">(Live Site)</a> | <a href="https://github.com/themcny/rails-online-shop-app">(Github Repo)</a></p>
-            </div>
-          </div>
-
-          <div class="project">
-            <img class="project-img" src="imgs/snowflake-small.png">
-            <div id="snowflake-text">
-              <p>Snow Days is a web app built with Sinatra. A user logs in and favorites ski resorts they love. When that resort gets a new dusting of snow, the user is alerted via text message. Snow Days utilizes the Weather Underground API, Twillio API, and Google OAuth.</p>
-
-              <p><a href="http://snow-days.herokuapp.com/">(Live Site)</a> | <a href="https://github.com/themcny/snow-days">(Github Repo)</a></p>
-            </div>
-          </div>
-
-          <div class="project"><img id='stickfigure' src="imgs/stickfigure-small.png"><a href="https://themcny.github.io/projects/stick-fighter/game.html">Stick Fighter (JavaScript Game)</a>
-          </div>
-       </div> <!-- #tab-3 -->
+      <div class="project"><img id='stickfigure' src="imgs/stickfigure-small.png"><a href="https://themcny.github.io/projects/stick-fighter/game.html">Stick Fighter (JavaScript Game)</a>
+      </div>
     </div>
   </body>
 </html>

@@ -3,11 +3,12 @@ body {
   padding-left: 5vw;
   padding-bottom: 5vw;
   padding-right: 5vw;
+  font-family: Verdana, Geneva, sans-serif;
 }
 
 .overview {
-  padding-bottom: .5em;
-  border-bottom: 1px solid white;
+  padding-bottom: 5em;
+  border-bottom: 1px solid black;
 }
 
 .introduction {
@@ -34,7 +35,7 @@ body {
 }
 
 .media-links {
-  padding-top: 13em;
+  padding-top: 8em;
   position: relative;
   margin-left: 40vw;
   margin-right: auto;

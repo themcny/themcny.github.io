@@ -1,124 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
   <head>
-    <meta charset= "utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nicole Yee</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="stylesheets/default.css"/>
-    <script type="text/javascript" src="scripts/typing.js"></script>
+    <!-- Foundation CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
   </head>
 
   <body>
-    <div class="cube-side cube-side-front overview-summary">
-      <div class="introduction">Nicole Yee is...</div>
-      <div id="item-0" class="overview-list-item">a developer at Amitree</div>
-      <div id="item-2" class="overview-list-item">an avid snowboarder</div>
-      <div id="item-3" class="overview-list-item">and a mandolin player</div>
-      <div id="item-4" class="overview-list-item">based out of San Francisco (most of the time).</div>
+    <ul class="tabs" data-responsive-accordion-tabs="tabs medium-accordion large-tabs" id="example-tabs">
+      <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Hi</a></li>
+      <li class="tabs-title"><a href="#panel2">What I Do</a></li>
+      <li class="tabs-title"><a href="#panel3">What I've Done</a></li>
+      <li class="tabs-title"><a href="#panel4">Who I Am</a></li>
+    </ul>
+
+    <div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-panel is-active" id="panel1">
+        <div class="grid-y" style="height: 65vh;">
+          <div class="cell small-2 medium-3 large-5">
+            <h1>Nicole Yee</h1>
+          </div>
+          <div class="cell small-2 medium-3 large-5">
+            <h2>Backend & Infrastructure Engineer</h2>
+          </div>
+          <div class="cell small-1 medium-2 large-3">
+            <a class="button large expanded" href="2021_Resume.pdf" download="2021_Nicole_Yee_Resume.pdf">
+              Download Resume (PDF)
+            </a>
+          </div>
+
+          <div class="cell small-1 medium-2 large-3">
+            <a href="https://github.com/themcny" aria-label="Github Link">
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/themcny" aria-label="Linkedin Link">
+              <i aria-hidden="true" class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:admin@themcny.io" aria-label="Email Link">
+              <i aria-hidden="true" class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs-panel" id="panel2">
+        <div class="subtitle">What I Do</div>
+        <div class="pg">
+          Hi, I'm Nicole
+          I'm a Backend turned Infrastructure engineer who loves working remotely from the Pacific and Mountain timezones.
+
+          I spend my days improving observability, digging deep into the "well that's mysterious and weird" type of bugs, and trying to unblock other engineers.
+          Currently, I'm an engineer on the DevOps team at Mode.
+        </div>
+      </div>
+
+      <div class="tabs-panel" id="panel3">
+        <div class="subtitle">What I've Done</div>
+        <div class="pg">
+          <a class=download-link>(You can download a pdf version of my resume here.)</a>
+
+          <span class="company-name">Mode</span>
+          <span class="job-title">Software Engineer (Tech Lead)</span>
+          <span class="job-title">Software Engineer (Backend)</span>
+
+          <span class="company-name">Amitree</span>
+          <span class="job-title">Software Engineer, R&D</span>
+
+          <span class="company-name">Roostify</span>
+          <span class="job-title">Software Developer</span>
+        </div>
+      </div>
+
+      <div class="tabs-panel" id="panel4">
+        <div class="subtitle">Who I Am</div>
+        <div class="pg">
+          When I'm not drumming vim commands on my keyboard, I like going to the woods or the mountains and walking for long distances (sometimes on a splitboard, usually with an overloaded backpack).
+          I follow West Coast weather patterns almost as obssessively as I follow the various avalanche forecasts for the mountain range I'm riding that season.
+          I love working in technology and then completely disconnecting from the connected world in my free time.
+        </div>
+      </div>
     </div>
 
-    <div class="media-links">
-      <a href="https://www.linkedin.com"><img src ="imgs/logo/linkedin_logo.png" alt="Linkedin Logo"/></a>
-      <a href="https://github.com/themcny"><img src ="imgs/logo/github.png" alt="GitHub Logo"/></a>
-    </div>
-
-    <div class="cube-side cube-side-side professional-work">
-      Position: Developer @ Roostify
-      Tech Stack: Ruby on Rails, Vue.js, Sinatra (Ruby), Casper.js, Node.js, HTML, CSS3, Javascript (JQuery, AJAX, ES6)
-      Testing Tools: RSpec, Jasmine
-      Other Stuff: Agile, TDD, BDD, Continuous Integration, Git (via GitHub)
-    </div>
-
-    <div class="cube-side cube-side-side personal-work">
-    </div>
-
-    <div class="cube-side cube-side-side misc-work">
-    </div>
-
-    <div class="cube-side cube-side-side extra-activities">
-    </div>
-
-    Past Personal Projects
-
-    <div class="project-timeline">
-      <div class="project">
-        <img class="project-img" src="">
-        <div id="phone-text">
-          <p>Took apart family telephone. Could not put it back together.</p>
-        </div>
-      </div>
-      <div class="project">
-        <img class="project-img" src="">
-        <div id="nerf-text">
-          <p>Removing air restrictors on nerf guns to improve nerf gun range.</p>
-        </div>
-      </div>
-      <div class="project">
-        <img class="project-img" src="">
-        <div id="bass-text">
-          <p>Re-sautering loose wires in electric bass guitar</p>
-        </div>
-      </div>
-      <div class="project">
-        <img class="project-img" src="">
-        <div id="engine-transmission-text">
-          <p>Rebuilt Kia engine and automatic transmission.</p>
-        </div>
-      </div>
-      <div class="project">
-        <img class="project-img" src="imgs/whatzcookin-small.png">
-        <div id="whatzcookin-text">
-          <p>WhatzCookin is a mobile-responsive web app that takes an ingredient and returns a recipe suggestion based on a user’s preferences. WhatzCookin utilizes a taste algorithm based on the flavors (sweet, spicy, bitter, etc.) of a user's favorited and rated recipes to create a user's taste profile. Using this taste profile, the app suggests a cuisine style (e.g. Italian or Japanese) that user veers towards.</p> 
-          <p>WhatCookin utilizes the Spoonacular API for its data and was built using Ruby on Rails and JavaScript.</p>
-          <p><a href="https://whatzcookin-dev.herokuapp.com">(Live Site)</a> | <a href="https://github.com/themcny/whatzcookin-rails">(Github Repo)</a></p>
-        </div>
-      </div>
-
-      <div class="project">
-        <img class="projet-img" src="">
-        <div id="bombermath-text">
-          <p>Bomber Math is a multiplication table game where you face off against an opponent to see who can answer a set of randomly generated problems quickest. The project was a top 100 finisher for the Hack Summit 2016 hackathon. It is built using Node.js, Express.js, and socket.io to create a quick, responsive web app that handles multiple simultaneous players.</p>
-
-          <p><a href="https://bomber-math.herokuapp.com/">(Live Site)</a> | <a href="https://github.com/themcny/bomber-math">(Github Repo</a></p>
-        </div>
-      </div>
-
-      <div class="project">
-        <img class="project-img" src="imgs/shoppingcart-small.png">
-        <div id="shoppingcart-text">
-          <p>Rails Online Shop is an online shop built with Ruby on Rails. A user can login and shop by placing items in their cart. Some key features include the ability to filter shop items based on their location or status. There is also an entirely separate admin dashboard for the 'shop owner' to access and update at will.</p>
-
-          <p><a href="https://rails-online-shop-paul-nicole.herokuapp.com">(Live Site)</a> | <a href="https://github.com/themcny/rails-online-shop-app">(Github Repo)</a></p>
-        </div>
-      </div>
-
-      <div class="project">
-        <img class="project-img" src="imgs/snowflake-small.png">
-        <div id="snowflake-text">
-          <p>Snow Days is a web app built with Sinatra. A user logs in and favorites ski resorts they love. When that resort gets a new dusting of snow, the user is alerted via text message. Snow Days utilizes the Weather Underground API, Twillio API, and Google OAuth.</p>
-
-          <p><a href="http://snow-days.herokuapp.com/">(Live Site)</a> | <a href="https://github.com/themcny/snow-days">(Github Repo)</a></p>
-        </div>
-      </div>
-
-      <div class="project"><img id='stickfigure' src="imgs/stickfigure-small.png"><a href="https://themcny.github.io/projects/stick-fighter/game.html">Stick Fighter (JavaScript Game)</a>
-      </div>
-    </div>
-    Upcoming Personal Projects
-
-    - homemade snowboard
-    - building my own OS (Assembly, C)
-    - scheme interpreter (Python)
-    - web-browser (JavaScript?)
-    - mobile application (Swift or Java)
-    - something in Java
-
+    <!-- FontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script>
+    <!-- jQuery CDN Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Foundation JS CDN Link -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <!-- Initialize Foundation JS -->
+    <script src="scripts/default.js"></script>
   </body>
 </html>
